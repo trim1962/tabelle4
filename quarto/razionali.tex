@@ -1,0 +1,419 @@
+\section{Funzioni razionali}
+\begin{esempiot}{Razionale **}{}
+Consideriamo la funzione\[f(x)=x^4-x^2 \]
+\end{esempiot}
+\begin{enumerate}[noitemsep]
+	\litem{Classificazione}la funzione è una funzione razionale. 
+	 \litem{Dominio}il dominio della funzione è $\R$.
+	\litem{Positività}risolviamo la disequazione
+	\begin{align*}
+	&x^4-x^2>0
+	\intertext{Raccolgo $x^2$}
+	&x^2(x^2-1)>0\\
+	\intertext{ottengo due disequazioni}
+	&x^2>0\\
+	&x^2-1>0\\
+	\end{align*}
+	Ottengo il~\cref{fig:Drazionale1} quindi la funzione è positiva per $-1<x$ e $x>1$
+	\litem{Intersezioni assi}l'intersezione con l'asse $x$ si ottiene
+	\begin{align*}
+	&\begin{cases}
+	y=0\\
+	y=x^4-x^2
+	\end{cases}&\begin{cases}
+	y=0\\
+	y=x^2(x^2-1)
+	\end{cases}
+	\intertext{risolviamo il sistema in due parti}
+	&\begin{cases}
+	y=0\\
+	x^2=0
+	\end{cases}
+	&\begin{cases}
+	y=0\\
+	x=0
+	\end{cases}
+	\intertext{e ottengo}
+	&\begin{cases}
+	y=0\\
+	x^2-1=0
+	\end{cases}&\begin{cases}
+	y=0\\
+	y=1
+	\end{cases}
+	&\begin{cases}
+	y=0\\
+	y=-1
+	\end{cases}\\
+	\end{align*}
+	L'intersezione asse $y$ si ottiene con
+\begin{align*}
+&\begin{cases}
+x=0\\
+y=x^4-x^2
+\end{cases}
+&\begin{cases}
+x=0\\
+y=0
+\end{cases}
+\end{align*}
+Quindi le intersezioni sono $B(0,0)$, $A(-1,0)$, $C(1,0)$
+\litem{Pari e dispari} $f(-x)=(-x)^4-(-x)^2=x^4-x^2=f(x)$ la funzione è pari
+\end{enumerate}
+La~\cref{exa:razio6} riassume quanto detto.
+\begin{figure}
+	\captionsetup{name=Grafico}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/dominio/disequazione1}
+	\caption{Segno funzione}
+	\label[graf]{fig:Drazionale1}
+\end{figure}
+\begin{funzionet}{Razionale}{razio6}
+	\includestandalone[width=\linewidth]{quarto/dominio/razio6}
+	\tcblower
+	\begin{itemize}
+		\item $y=x^4-x^2$
+		\item Dominio $\R$
+		\item Codominio $\R$
+		\item Positività $-1<x$ e $x>1$
+		\item Intersezione asse $x$ $A(-1,0)$, $C(1,0)$,
+		\item Intersezione asse $y$ $B(0,0)$
+		%		\item Crescente
+		\item Asintoti verticali nessuno
+		\item Asintoti orizzontali nessuno
+		\item Funzione pari
+	\end{itemize}
+\end{funzionet}
+\begin{esempiot}{Razionale *}{}
+Consideriamo la funzione\[f(x)=2x+1\]
+\end{esempiot}
+\begin{enumerate}[noitemsep]
+\litem{Classificazione}la funzione è una funzione razionale. 
+ \litem{Dominio}il dominio della funzione è $\R$.
+\litem{Positività}risolviamo la disequazione
+\begin{align*}
+&2x+1>0
+\intertext{separo le variabili}
+&x>-\dfrac{1}{2}\\
+\end{align*}
+Ottengo il~\cref{fig:Drazionale2} quindi la funzione è positiva per $x>-\dfrac{1}{2}$
+\litem{Intersezioni assi}l'intersezione con l'asse $x$ si ottiene con
+\begin{align*}
+&\begin{cases}
+y=0\\
+y=2x+1
+\end{cases}&\begin{cases}
+y=0\\
+2x+1=0
+\end{cases}
+\intertext{ottengo}
+&\begin{cases}
+y=0\\
+x=-\dfrac{1}{2}
+\end{cases}
+\end{align*}
+L'intersezione asse $y$ si ottiene con
+\begin{align*}
+&\begin{cases}
+x=0\\
+y=2x+1
+\end{cases}
+&\begin{cases}
+x=0\\
+y=1
+\end{cases}
+\end{align*}
+Quindi le intersezioni sono $A(-\dfrac{1}{2},0)$, $B(0,1)$
+\litem{Pari e dispari} $f(-x)=-2x+1\neq f(x)$ la funzione non è pari ne dispari
+\end{enumerate}
+La~\cref{exa:razio1} riassume quanto detto.
+\begin{figure}
+	\captionsetup{name=Grafico}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/dominio/disequazione2}
+	\caption{Segno funzione}
+	\label[graf]{fig:Drazionale2}
+\end{figure}
+\begin{funzionet}{Razionale}{razio1}
+\includestandalone[width=\linewidth]{quarto/dominio/razio1}
+	\tcblower
+	\begin{itemize}
+		\item $y=2x+1$
+		\item Dominio $\R$
+		\item Codominio $\R$
+		\item Positività $x\geq-\dfrac{1}{2}$
+		\item Intersezione asse $x$ $(-\dfrac{1}{2},0)$
+		\item Intersezione asse $y$ $(0,1)$
+%		\item Crescente
+		\item Asintoti verticali nessuno
+		\item Asintoti orizzontali nessuno
+		\item Funzione nè pari nè dispari
+	\end{itemize}
+	\end{funzionet}
+%
+\begin{esempiot}{Razionale fratta *}{}
+	Consideriamo la funzione\[f(x)=\dfrac{1}{x}\]
+\end{esempiot}
+\begin{enumerate}[noitemsep]
+	\litem{Classificazione}la funzione è una funzione razionale fratta.
+	\litem{Dominio}il dominio della funzione è $\R-\lbrace 0\rbrace$.
+	\litem{Positività}risolviamo la disequazione
+	\begin{align*}
+	&\dfrac{1}{x}>0
+	\end{align*}
+	Ottengo il~\cref{fig:Drazionale3}. La funzione è positiva per $x>0$
+	\litem{Intersezioni assi}l'intersezione con l'asse $x$ non esiste.
+	L'intersezione asse $y$ non esiste.
+	\litem{Pari e dispari} $f(-x)=-\dfrac{1}{x}=-f(x)$ la funzione è dispari
+\end{enumerate}
+La~\cref{exa:ratio2} riassume quanto detto.
+\begin{figure}
+	\captionsetup{name=Grafico}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/dominio/disequazione3}
+	\caption{Segno funzione}
+	\label[graf]{fig:Drazionale3}
+\end{figure}
+\begin{funzionet}{Razionale fratta *}{ratio2}
+	\includestandalone[width=\textwidth]{quarto/dominio/razio2}
+	\tcblower
+	\begin{itemize}
+		\item $y=\dfrac{1}{x}$
+		\item Dominio $\R-\lbrace0\rbrace$
+		\item Codominio $\R$
+		\item Positività $x\geq0$
+		\item Intersezione asse $x$ nessuna
+		\item Intersezione asse $y$ nessuna
+%		\item Decrescente
+		\item Asintoti verticali uno
+		\item Asintoti orizzontali uno
+		\item Funzione è dispari
+	\end{itemize}
+\end{funzionet}
+\begin{esempiot}{Razionale *}{}
+	Consideriamo la funzione\[f(x)=\dfrac{x}{x^2-1} \]
+\end{esempiot}
+\begin{enumerate}[noitemsep]
+	\litem{Classificazione}la funzione è una funzione razionale fratta. 
+	\litem{Dominio}dato che è una razionale fratta, determiniamo il dominio ponendo il denominatore uguale a zero. \[x^2-1=0\] 
+	\[x_{1,2}=\dfrac{0\pm\sqrt{4}}{2}=\begin{cases}
+	x_1=1\\x_2=-1
+	\end{cases} \]
+	Il dominio della funzione è $\R-\lbrace 1,-1\rbrace$.
+	\litem{Positività}risolviamo la disequazione
+	\begin{align*}
+	&\dfrac{x}{x^2-1}\geq 0
+	\intertext{ripartiamo da quello che abbiamo trovato prima}
+	&x^2-1>0
+	\intertext{risolviamo il numeratore}
+	&x>0\\
+	\end{align*}
+	Ottengo il~\cref{fig:Drazionale4}. La funzione è positiva per $-1<x<0$ e $x>1$
+	\litem{Intersezioni assi}l'intersezione con l'asse $x$ si ottiene
+	\begin{align*}
+	&\begin{cases}
+	y=0\\
+	y=\dfrac{x}{x^2-1}
+	\end{cases}&\begin{cases}
+	y=0\\
+	x=0
+	\end{cases}
+	\end{align*}
+	L'intersezione asse $y$ si ottiene con
+	\begin{align*}
+	&\begin{cases}
+	x=0\\
+	y=\dfrac{x}{x^2-1}
+	\end{cases}
+	&\begin{cases}
+	x=0\\
+	y=0
+	\end{cases}
+	\end{align*}
+	Quindi l'intersezione è $A(0,0)$, 
+	\litem{Pari e dispari} $f(-x)=\dfrac{-x}{(-x)^2-1}=-\dfrac{x}{x^2-1}=-f(x)$ la funzione è dispari
+\end{enumerate}
+La~\cref{exa:razio3} riassume quanto detto.
+\begin{figure}
+	\captionsetup{name=Grafico}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/dominio/disequazione4}
+	\caption{Segno funzione}
+	\label[graf]{fig:Drazionale4}
+\end{figure}
+\begin{funzionet}{Razionale fratta}{razio3}
+	\includestandalone[width=\textwidth]{quarto/dominio/razio3}
+	\tcblower
+	\begin{itemize}
+		\item $y=\dfrac{x}{x^2-1}$
+		\item Dominio $\R-\lbrace-1,1\rbrace$
+		\item Codominio $\R$
+		\item Positività $-1<x<0\vee x>1$
+		\item Intersezione asse $x$ $(0,0)$ 
+		\item Intersezione asse $y$ $(0,0)$ 
+%		\item Decrescente 
+	%	\item Crescente per $x>2$
+		\item Asintoti verticali due
+		\item Asintoti orizzontali uno
+		\item La funzione è dispari
+	\end{itemize}
+\end{funzionet}
+\begin{esempiot}{Razionale *}{}
+	Consideriamo la funzione\[f(x)=\dfrac{x^2-1}{x^2-4} \]
+\end{esempiot}
+\begin{enumerate}[noitemsep]
+	\litem{Classificazione} la funzione è una funzione razionale fratta. 
+	\litem{Dominio} dato che è una razionale fratta determini il dominio ponendo il denominatore uguale a zero. \[x^2-4=0\] 
+	\[x_{1,2}=\dfrac{0\pm\sqrt{16}}{2}=\begin{cases}
+	x_1=2\\x_2=-2
+	\end{cases} \]
+	Il dominio della funzione è $\R-\lbrace 2,-2\rbrace$.
+	\litem{Positività}risolviamo la disequazione
+	\begin{align*}
+	&\dfrac{x^2-1}{x^2-4}>0
+	\intertext{ripartiamo da quello che stato trovato prima}
+	&x^2-4>0
+	\intertext{risolviamo il numeratore}
+	&x^2-1>0\\
+	\end{align*}
+	Ottengo il~\cref{fig:Drazionale7}. La funzione è positiva per $-1<x<1\vee x>2\vee x<-2 $
+	\litem{Intersezioni assi}l'intersezione con l'asse $x$ si ottiene
+	\begin{align*}
+	&\begin{cases}
+	y=0\\
+	y=\dfrac{x^2-1}{x^2-4}
+	\end{cases}&\begin{cases}
+	y=0\\
+	x^2-1=0
+	\end{cases}\\
+	&\begin{cases}
+	y=0\\
+	x=1
+	\end{cases}
+		&\begin{cases}
+	y=0\\
+	x=-1
+	\end{cases}\\
+	\end{align*}
+	L'intersezione asse $y$ si ottiene con
+	\begin{align*}
+	&\begin{cases}
+	x=0\\
+	y=\dfrac{x^2-1}{x^2-4}
+	\end{cases}
+	&\begin{cases}
+	x=0\\
+	y=\dfrac{1}{4}
+	\end{cases}
+	\end{align*}
+	Quindi l'intersezione è $A(-1,0)$, $B(1,0)$, $C(0,\dfrac{1}{4})$
+	\litem{Pari e dispari} $f(-x)=\dfrac{(-x)^2-1}{(-x)^2-4}=\dfrac{x^2-1}{x^2-2}=f(x)$ la funzione è pari
+\end{enumerate}
+La~\cref{exa:razio7} riassume quanto detto.
+\begin{figure}
+	\captionsetup{name=Grafico}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/dominio/disequazione7}
+	\caption{Segno funzione}
+	\label[graf]{fig:Drazionale7}
+\end{figure}
+\begin{funzionet}{Razionale fratta}{razio7}
+	\includestandalone[width=\textwidth]{quarto/dominio/razio7}
+	\tcblower
+	\begin{itemize}
+		\item $y=\dfrac{x^2-1}{x^2-4}$
+		\item Dominio $\R-\lbrace-2,2\rbrace$
+		\item Codominio $\R$
+		\item Positività $-1<x<1\vee x>2\vee x<-2 $
+		\item Intersezione asse $x$ $(-1,0)$, $(1,0)$, 
+		\item Intersezione asse $y$ $(0,\dfrac{1}{4})$
+		%		\item Decrescente 
+		%	\item Crescente per $x>2$
+		\item Asintoti verticali due
+		\item Asintoti orizzontali uno
+		\item La funzione è pari
+	\end{itemize}
+\end{funzionet}
+\begin{esempiot}{Razionale **}{}
+	Consideriamo la funzione\[f(x)=\dfrac{x^2-2x-3}{x^2+6x+5} \]
+\end{esempiot}
+\begin{enumerate}[noitemsep]
+	\litem{Classificazione}la funzione è una funzione razionale fratta.
+	\litem{Dominio}dato che è una razionale fratta determini il dominio ponendo il denominatore uguale a zero. \[x^2+6x+5=0\] 
+	\[x_{1,2}=\dfrac{-6\pm\sqrt{36-20}}{2}=\begin{cases}
+	x_1=-5\\x_2=-1
+	\end{cases} \] La funzione per $f(-1)=\dfrac{(-1)^2-2(-1)-3}{(-1)^2-6+5}=\dfrac{0}{0}$
+	in questo caso risolvo \[x^2-2x-3=0\] 
+	\[x_{1,2}=\dfrac{2\pm\sqrt{4+12}}{2}=\begin{cases}
+	x_1=+3\\x_2=-1	\end{cases} \]
+	Dato che 
+	\begin{align*}
+x^2-2x-3=&(x-3)(x+1)\\
+x^2+6x+5=&(x+5)(x+1)\\
+y=\dfrac{x^2-2x-3}{x^2+6x+5}=&\dfrac{(x-3)(x+1)}{(x+5)(x+1)}\\
+y=&\dfrac{x-3}{x+5}
+	\end{align*}
+	Il dominio della funzione è $\R-\lbrace -5\rbrace$.
+	\litem{Positività}risolviamo la disequazione
+	\begin{align*}
+	&\dfrac{x-3}{x+5}>0\\
+	&x-3>0\\
+	&x>3
+	\intertext{risolviamo il numeratore}
+	&x+5>0\\
+	&x>-5
+	\end{align*}
+	Ottengo il~\cref{fig:Drazionale8}. La funzione è positiva per $x<-5\vee x>3$
+	\litem{Intersezioni assi}l'intersezione con l'asse $x$ si ottiene
+	\begin{align*}
+	&\begin{cases}
+	y=0\\
+	y=\dfrac{x-3}{x+5}
+	\end{cases}&\begin{cases}
+	y=0\\
+	x=3
+	\end{cases}\\
+	&\begin{cases}
+	y=0\\
+	x=1
+	\end{cases}
+	\end{align*}
+	L'intersezione asse $y$ si ottiene con
+	\begin{align*}
+	&\begin{cases}
+	x=0\\
+	y=\dfrac{x-3}{x+5}
+	\end{cases}
+	&\begin{cases}
+	x=0\\
+	y=-\dfrac{-3}{5}
+	\end{cases}
+	\end{align*}
+	Quindi l'intersezione è $A(3,0)$, $B(0,-\dfrac{3}{5})$
+	\litem{Pari e dispari} $f(-x)=\dfrac{(-x)-3}{(-x)+5}=\dfrac{-(x+3)}{-(x-5)}\neq f(x)$ la funzione non è pari.
+\end{enumerate}
+La~\cref{exa:razio7} riassume quanto detto.
+\begin{figure}
+	\captionsetup{name=Grafico}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/dominio/disequazione8}
+	\caption{Segno funzione}
+	\label[graf]{fig:Drazionale8}
+\end{figure}
+\begin{funzionet}{Razionale fratta}{razio8}
+	\includestandalone[width=\textwidth]{quarto/dominio/razio8}
+	\tcblower
+	\begin{itemize}
+		\item $y=\dfrac{x^2-2x-3}{x^2+6x+5}=\dfrac{x-3}{x+5}$
+		\item Dominio $\R-\lbrace-5\rbrace$
+		\item Codominio $\R$
+		\item Positività $-1<x<1\vee x>2\vee x<-2 $
+		\item Intersezione asse $x$ $(-1,0)$, $(1,0)$, 
+		\item Intersezione asse $y$ $(0,\dfrac{1}{4})$
+		%		\item Decrescente 
+		%	\item Crescente per $x>2$
+		\item Asintoti verticali due
+		\item Asintoti orizzontali uno
+		\item La funzione è pari
+	\end{itemize}
+\end{funzionet}

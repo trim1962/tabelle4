@@ -1,0 +1,27 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=5.0cm,ystep=5.0cm] (-24.2252133424618,-18.122668961961253) grid (22.173229287319806,21.175656112373193);
+\draw[->,color=black] (-24.2252133424618,0.) -- (22.173229287319806,0.);
+\foreach \x in {-20.,-15.,-10.,-5.,5.,10.,15.,20.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-18.122668961961253) -- (0.,21.175656112373193);
+\foreach \y in {-15.,-10.,-5.,5.,10.,15.,20.}
+\draw[shift={(0,\y)},color=black] (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-24.2252133424618,-18.122668961961253) rectangle (22.173229287319806,21.175656112373193);
+\draw[line width=2pt,color=red,smooth,samples=400,domain=-24.2252133424618:22.173229287319806] plot(\x,{((\x)-3.0)/((\x)+5.0)});
+\draw (-5.,-18.122668961961253) -- (-5.,21.175656112373193);
+\draw[dash pattern=on 10pt off 10pt,color=qqqqff,fill=qqqqff,fill opacity=0.25]((3.0194237889046236,21.175656112373193)--(3.0194237889046236,0)--(-4.988848337587931,0)--(-4.988848337587931,21.175656112373193);
+
+\draw[dash pattern=on 10pt off 10pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](-25.05080840704866,0)--(-25.05080840704866,-18.122668961961253)--(-4.988848337587931,-18.122668961961253)--(-4.988848337587931,0);
+\draw[dash pattern=on 10pt off 10pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](3.0194237889046236,0)--(3.0194237889046236,-18.122668961961253)--(22.998824351906666,-18.122668961961253)--(22.998824351906666,0);
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0.}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=2.0cm,ystep=2.0cm] (-7.051583471074385,-5.501467768595035) grid (6.548816528925618,6.017732231404961);
+\draw[->,color=black] (-7.051583471074385,0.) -- (6.548816528925618,0.);
+\foreach \x in {-6.,-4.,-2.,2.,4.,6.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-5.501467768595035) -- (0.,6.017732231404961);
+\foreach \y in {-4.,-2.,2.,4.,6.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-7.051583471074385,-5.501467768595035) rectangle (6.548816528925618,6.017732231404961);
+\draw[line width=1.2pt,color=zzttqq,smooth,samples=400,domain=-7.051583471074385:6.548816528925618] plot(\x,{((\x)^(2.0)-1.0)/((\x)^(2.0)-4.0)});
+\draw[dash pattern=on 3pt off 3pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](-7.293583471074385,0.0)--(-7.293583471074385,-5.501467768595035)--(-1.9937834710743836,-5.501467768595035)--(-1.9937834710743836,0.0);
+\draw[dash pattern=on 3pt off 3pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](-1.0015834710743834,0)--(-1.0015834710743834,-5.501467768595035)--(1.0070165289256172,-5.501467768595035)--(1.0070165289256172,0);
+\draw[dash pattern=on 3pt off 3pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](1.9992165289256174,0)--(1.9992165289256174,-5.501467768595035)--(6.790816528925618,-5.501467768595035)--(6.790816528925618,0);
+\draw[dash pattern=on 3pt off 3pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](-1.9937834710743836,0.0)--(-1.0015834710743834,0)--(-1.0015834710743834,6.017732231404961)--(-1.9937834710743836,6.017732231404961);
+\draw[dash pattern=on 3pt off 3pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](1.9937834710743836,0.0)--(1.0015834710743834,0)--(1.0015834710743834,6.017732231404961)--(1.9937834710743836,6.017732231404961);
+
+\draw (2.,-5.501467768595035) -- (2.,6.017732231404961);
+\draw (-2.,-5.501467768595035) -- (-2.,6.017732231404961);
+%\begin{scriptsize}
+%\draw[color=zzttqq] (-6.857983471074385,0.9236322314049626) node {$p$};
+%\draw[color=black] (1.6846165289256174,5.86043223140496) node {$i$};
+%\draw[color=black] (-1.7517834710743836,5.86043223140496) node {$j$};
+%\end{scriptsize}
+\end{tikzpicture}
+\end{document}

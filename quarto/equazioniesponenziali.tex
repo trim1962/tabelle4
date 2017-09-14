@@ -1,0 +1,159 @@
+\chapter{Le equazioni esponenziali}
+\label{cha:LeEquazioniEsponenziali}
+\begin{definizionet}{Equazione esponenziale}{}\label{def:EquazioneEsponenziale}
+Chiamo equazione esponenziale\index{Equazione!Esponenziale} un'equazione del tipo \[a^{f(x)}=a^{g(x)}\quad a>0\quad  a\neq1 \]
+\end{definizionet}
+L'equazione esponenziale ha una sola soluzione. 
+Dall'equazione esponenziale\nobs\vref{def:EquazioneEsponenziale} è possibile passare all'equazione \[f(x)=g(x) \]Non tutte le equazioni esponenziali sono riconducibili alla forma canonica.
+\begin{esempiot}{Equazione esponenziale}{}
+	Risolvere l'equazione $2^{3x+1}=2^{5x+2} $
+\end{esempiot}
+\begin{NodesList}[margin=4cm]
+\begin{align*}
+2^{3x+1}=2^{5x+2}\AddNode\\
+3x+1=5x+2\AddNode\\
+3x-5x=2-1\AddNode\\
+x=-\dfrac{1}{2}\AddNode
+\end{align*}
+\LinkNodes{Uguaglio gli esponenti}%
+\LinkNodes{Semplifico}%
+\LinkNodes{Risolvo}%
+\end{NodesList}
+\[x=-\dfrac{1}{2}\]
+\'{e} la soluzione.
+
+Un altro tipo di equazione esponenziale si ha quando una base è una potenza dell'altra. In questo caso bisogna prima trasformare una base nell'altra utilizzando le proprietà delle potenze.
+\begin{esempiot}{Equazione esponenziale}{}
+	Risolvere l'equazione $9^{x+1}=3^{3x+4}$
+\end{esempiot}
+	In questo caso le basi sembrano diverse $9\neq 3$ ma $9$ \'{e} una potenza del $3$ si procede come segue:
+	\begin{NodesList}[margin=4cm]
+		\begin{align*}
+			9^{x+1}=3^{3x+4}\AddNode\\
+			(3^2)^{x+1}=3^{3x+4}\AddNode\\
+			\intertext{\hfil Potenza di potenze}
+			3^{2x+2}=3^{3x+4}\AddNode\\
+			2x+2=3x+4\AddNode\\
+			2x-3x=-2+4\AddNode\\
+			x=-4\AddNode
+		\end{align*}
+		\LinkNodes{Trasformo le basi}%
+		\LinkNodes{}%
+		\LinkNodes{Uguaglio gli esponenenti}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Risolvo}%
+	\end{NodesList}
+	\[x=-4\]
+	\'{e} la soluzione.
+Un altra situazione è il caso in cui le basi non sono uguali. Per risolverla dobbiamo avere esponenti uguali. Con procedimenti algebrici, si tende a trasformare l'equazione semplificando l'espressione. 
+\begin{esempiot}{Equazione esponenziale}{}
+	Risolvere l'equazione $7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x$
+\end{esempiot}
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x\AddNode\\
+			\intertext{\hfil indici uguali}
+			7\cdot7^x+2\cdot7^x=4\cdot9\cdot3^x+13\cdot3^x\AddNode\\
+			(7+2)7^x=36\cdot3^x+13\cdot3^x\AddNode\\
+			9\cdot7^x=49\cdot3^x\AddNode\\
+			\dfrac{7^x}{3^x}=\dfrac{49}{9}\AddNode\\
+			x=2\AddNode
+		\end{align*}
+		\LinkNodes{Semplifico l'espressione}%
+		\LinkNodes{Trasformo}%
+		\LinkNodes{Ottengo}%
+		\LinkNodes{Risolvo}%
+		\LinkNodes{Ottengo la soluzione}%
+	\end{NodesList}
+	\[x=2\]
+	\'{e} la soluzione accettabile.
+Un altro tipo di equazione che è riconducibile alle precedenti si ha quando una base si ripete. Il procedimento è semplice, con un raccoglimento totale raccolgo l'elemento in comune. 
+\begin{esempiot}{Equazione esponenziale}{}
+	Risolvere l'equazione $3^{2x+1}+3^{2x}-3^{2x+2}=-45$
+\end{esempiot}
+	In questa situazione si ripete sempre la potenza $3^{2x}$  si procede come segue:
+	\begin{NodesList}[margin=4cm]
+		\begin{align*}
+			3^{2x+1}+3^{2x}-3^{2x+2}=-45\AddNode\\
+			3^{2x}3+3^{2x}-3^{2x}3^2=-45\AddNode\\
+			\intertext{\hfil Raccolgo $3^{2x}$}
+			3^{2x}(3+1-9)=-45\AddNode\\
+			-5\cdot 3^{2x}=-45\AddNode\\
+			\intertext{\hfil Divido per $-5$}
+			3^{2x}=9\AddNode\\
+			2x=2\AddNode\\
+			x=1\AddNode
+		\end{align*}
+		\LinkNodes{Separo $3^{2x}$}%
+		\LinkNodes{Raccolgo}%
+		\LinkNodes{Sommo}%
+		\LinkNodes{Semplifico}%
+		\LinkNodes{Uguaglio gli esponenti}%
+		\LinkNodes{Risolvo}%
+	\end{NodesList}
+	\[x=1\]
+	\'{e} la soluzione.
+Equazioni esponenziali risolvibili tramite sostituzioni. Questa volta si trasforma l'equazione esponenziale in un altra non esponenziale. Si risolve la nuova equazione le cui soluzioni permettono di risolvere l'esponenziale di partenza.
+\begin{esempiot}{Equazione esponenziale}{}
+	Risolvere l'equazione $3^{2x}-8\cdot 3^x-9=0$
+\end{esempiot}
+	 è un'equazione del tipo $a^{2x}+a^{x}+c=0$ si risolve con la sostituzione $a^{x}=t$ Ovviamente $t>0$ 
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			3^{2x}-8\cdot 3^x-9=0\AddNode\\
+			%\intertext{\hfil $2^x=t$}
+			t^2-8t-9=0\AddNode\\
+			t_{1,2}=\dfrac{8\pm\sqrt{64+36}}{2}\AddNode\\
+			\intertext{\hfil Inverto la trasformazione}
+			t_{1}=9\AddNode\\
+			3^{x}=9\AddNode\\
+			x=2\AddNode\\
+			\intertext{\hfil Uso la seconda soluzione}
+			t_{2}=-1\AddNode\\
+			3^x=-1\AddNode
+		\end{align*}
+		\LinkNodes{Trasformo l'equazione}%
+		\LinkNodes{Risolvo}%
+		\LinkNodes{Ottengo due soluzioni}%
+		\LinkNodes{Risolvo l'equazione esponenziale}%
+		\LinkNodes{Uguaglio gli esponenti e risolvo}%
+		\LinkNodes{}%
+		\LinkNodes{Equazione impossibile}%
+	\end{NodesList}
+	\[x=2\]
+	\'{e} la soluzione.
+Un altro esempio è il seguente
+\begin{esempiot}{Equazione esponenziale}{}
+	Risolvere l'equazione $ 2^{x+1}-2^{2-x}=7$ 
+\end{esempiot}
+	è un'equazione del tipo $a^{x}+a^{-x}+c=0$ si risolve con la sostituzione $a^{x}=t$
+	Ovviamente $t>0$ 
+	\begin{NodesList} [margin=4cm]
+		\begin{align*}
+			 2\cdot 2^{x}-4\cdot 2^{-x}-7=0\AddNode\\
+			 \intertext{\hfil $2^x=t$}
+			2t-4t^{-1}-7=0\AddNode\\
+			2t-4\dfrac{1}{t}-7=0\AddNode\\
+			2t^2-7x-4=0\AddNode\\
+			t_{1,2}=\dfrac{7\pm\sqrt{49+32}}{4}\AddNode\\
+			\intertext{\hfil Inverto la trasformazione}
+			t_{1}=4\AddNode\\
+			2^{x}=4\AddNode\\
+			x=2\AddNode\\
+			\intertext{\hfil Uso la seconda soluzione}
+			t_{2}=-\dfrac{1}{4} \AddNode\\
+			3^x=-\dfrac{1}{4}\AddNode
+		\end{align*}
+		\LinkNodes{Trasformo l'equazione}%
+		\LinkNodes{Trasformo}%
+		\LinkNodes{Ottengo}%
+		\LinkNodes{Risolvo}%
+		\LinkNodes{Ottengo due soluzioni}%
+		\LinkNodes{Risolvo l'equazione esponenziale}%
+		\LinkNodes{Uguaglio gli esponenti e risolvo}%
+		\LinkNodes{}%
+		\LinkNodes{Equazione impossibile}%
+	\end{NodesList}
+	\[x=2\]
+	\'{e} la soluzione accettabile.
+\altapriorita{risistemare il tutto non  funziona qualcosa in tikz}

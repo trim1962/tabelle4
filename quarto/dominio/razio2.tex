@@ -1,0 +1,26 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-5.26,0.) -- (6.1,0.);
+\foreach \x in {-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.,5.,6.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-4.46) -- (0.,4.22);
+\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.,4.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.26,-4.46) rectangle (6.1,4.22);
+\draw[line width=1.2pt,color=qqqqff,smooth,samples=300,domain=-5.26:6.1000000000000005] plot(\x,{1.0/(\x)});
+%\draw[dash pattern=on 2pt off 2pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](0.,4.22)--(0.,-4.46)--(6.3,-4.46)--(6.3,4.22);
+\draw[dash pattern=on 2pt off 2pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](0.,0)--(0.,4.46)--(-6.3,4.46)--(-6.3,0);
+
+\begin{scriptsize}\draw[dash pattern=on 2pt off 2pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](0.,0)--(0.,-4.46)--(6.3,-4.46)--(6.3,0);
+%\draw[color=qqqqff] (-5.1,-0.31) node {$f$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

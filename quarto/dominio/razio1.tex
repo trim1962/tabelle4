@@ -1,0 +1,27 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-5.84,-4.5) grid (5.52,4.26);
+\draw[->,color=black] (-5.84,0.) -- (5.52,0.);
+\foreach \x in {-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.,5.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-4.5) -- (0.,4.26);
+\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.,4.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.84,-4.5) rectangle (5.52,4.26);
+\draw [domain=-5.84:5.52] plot(\x,{(--1.--2.*\x)/1.});
+\draw[dash pattern=on 2pt off 2pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](-5.84,4.26)--(-5.84,0)--(-0.5,0)--(-0.5,4.26);
+\draw[dash pattern=on 2pt off 2pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](-0.5,0)--(-0.5,-4.5)--(5.6,-4.5)--(5.6,0);
+\begin{scriptsize}
+\draw[color=black] (1.26,4.13) node {$f$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

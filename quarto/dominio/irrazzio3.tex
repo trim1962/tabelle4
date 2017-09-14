@@ -1,0 +1,30 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqqqff}{rgb}{0.,0.,1.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-5.84,-5.26) grid (5.4,4.26);
+\draw[->,color=black] (-5.84,0.) -- (5.4,0.);
+\foreach \x in {-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.,5.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-5.26) -- (0.,4.26);
+\foreach \y in {-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-5.84,-5.26) rectangle (5.4,4.26);
+\draw[line width=1.2pt,color=red,smooth,samples=100,domain=-5.840000000000004:-2.000000007600001] plot(\x,{sqrt((\x)^(2.0)-4.0)});
+\draw[line width=1.2pt,color=red,smooth,samples=100,domain=2.000000591108107:5.3999999999999995] plot(\x,{sqrt((\x)^(2.0)-4.0)});
+\draw[dash pattern=on 2pt off 2pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](-6.04,0)--(-6.04,-5.26)--(-2.,-5.26)--(-2.,0);
+\draw[dash pattern=on 2pt off 2pt,color=qqqqff,fill=qqqqff,fill opacity=0.25](2.,0)--(2.,-5.26)--(5.6,-5.26)--(5.6,0);
+\begin{scriptsize}
+\draw[color=qqwuqq] (-4.44,4.13) node {$h$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

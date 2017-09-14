@@ -1,0 +1,819 @@
+\chapter{Disequazioni di secondo grado}
+\label{cha:Disequazionisecondogrado}
+%\section{Disequazioni intere}
+%Una disequazione di secondo grado\index{Disequazione!secondo grado!intera} è un'espressione del tipo
+%\begin{equation}
+%2x^2-x-1\geq 0\label{equ:DisSecondoGrado1}
+%\end{equation} 
+%in cui abbiamo un trinomio posto maggiore o uguale di zero. Per risolvere la disequazione  possiamo procedere in questo modo. Trasformiamo  il problema in un altro. Per far ciò  utilizziamo la relazione
+%\begin{align}
+%&ax^2+bx+c=a(x-x_{1})(x-x_{2})\label{DisTrinsecGrado0}\\
+%&x_{1}=\dfrac{-b+\sqrt{b^2-4ac}}{2a}\label{DisTrinsecGrado1}\\
+%&x_{2}=\dfrac{-b-\sqrt{b^2-4ac}}{2a}\label{DisTrinsecGrado2}
+%\end{align}
+%Quindi utilizzando le relazioni\nobs\vrefrange{DisTrinsecGrado0}{DisTrinsecGrado2} possiamo scrivere 
+%\begin{align}
+%&2x^2-x-1\\
+%&x_{1}=\dfrac{1+\sqrt{9}}{4}\notag
+%&x_{1}=\dfrac{1-\sqrt{9}}{4}\notag\\
+%&x_{1}=\dfrac{1+3}{4}\notag
+%&x_{1}=\dfrac{1-3}{4}\notag\\
+%&x_{1}=\dfrac{4}{4}=1\notag
+%&x_{1}=-\dfrac{2}{4}=-\dfrac{1}{2}\notag\\
+%&2x^2-x-1=2(x-1)(x+\dfrac{1}{2})\label{DisTrinsecGradoEs1}
+%\end{align}
+%La relazione\nobs\vref{DisTrinsecGradoEs1} trasforma un trinomio di secondo grado nel prodotto di due binomi e un numero. Quindi la disequazione\nobs\vref{equ:DisSecondoGrado1} diventa 
+%\begin{equation}
+%2(x-1)(x+\dfrac{1}{2})\geq 0\label{equ:DisSecondogrado1a}
+%\end{equation} 
+%Ottengo il grafico\nobs\vref{fig:esempioDisSecGrad1}. Il disegno mostra tre righe una per ogni fattore del prodotto\nobs\vref{equ:DisSecondogrado1a}. Nel particolare il trinomio è positivo per $x\leq-\dfrac{1}{2}$ o $x\geq 1$ negativo per $-\dfrac{1}{2}\leq x\leq 1$
+%
+%Consideriamo un altro esempio
+%\begin{equation}
+%-3x^2+4x-1\geq 0\label{equ:DisSecondoGrado2}
+%\end{equation} 
+%anche qui abbiamo un trinomio posto maggiore o uguale di zero. Per risolvere la disequazione  procediamo come prima  Trasformando  il problema in un altro. 
+%Quindi utilizzando le relazioni\nobs\vrefrange{DisTrinsecGrado0}{DisTrinsecGrado2} possiamo scrivere: 
+%\begin{align}
+%&-3x^2+4x-1\\
+%&x_{1}=\dfrac{-4+\sqrt{4}}{-6}\notag
+%&x_{1}=\dfrac{-4-\sqrt{4}}{-6}\notag\\
+%&x_{1}=\dfrac{-4+2}{-6}\notag
+%&x_{1}=\dfrac{-4-2}{-6}\notag\\
+%&x_{1}=\dfrac{-2}{-6}=\dfrac{1}{3}\notag
+%&x_{1}=-\dfrac{-6}{-6}=1\notag\\
+%&-3x^2+4x-1=-3(x-1)(x-\dfrac{1}{3})\label{DisTrinsecGradoEs2}
+%\end{align}
+%Anche questa volta relazione\nobs\vref{DisTrinsecGradoEs2} trasforma il trinomio di secondo grado nel prodotto di due binomi e un numero. Quindi la disequazione\nobs\vref{equ:DisSecondoGrado2} diventa 
+%\begin{equation}
+%-3(x-1)(x-\dfrac{1}{3})\geq 0\label{equ:DisSecondogrado2a}
+%\end{equation} 
+%Ottengo il grafico\nobs\vref{fig:esempioDisSecGrad2}. Il disegno mostra tre righe una per ogni fattore del prodotto\nobs\vref{equ:DisSecondogrado2a}. Nel particolare il trinomio è negativo per $x\leq\dfrac{1}{3}$ o $x\geq 1$, positivo per $-\dfrac{1}{3}\leq x\leq 1$
+%\begin{figure}
+%	\centering
+%		\begin{subfigure}[b]{.4\linewidth}
+%			\centering
+%			\includestandalone[width=\textwidth]{quarto/DisSecGrado/DisSecGradoesempio1}
+%			\caption{Esempio 1}
+%			\label{fig:esempioDisSecGrad1}
+%		\end{subfigure}%
+%	\centering
+%	\quad
+%	\begin{subfigure}[b]{.4\linewidth}
+%			\centering
+%			\includestandalone[width=\textwidth]{quarto/DisSecGrado/DisSecGradoesempio2}
+%			\caption{Esempio 2}
+%			\label{fig:esempioDisSecGrad2}
+%	\end{subfigure}%
+%\caption{$\Delta>0$}
+%\label{fig:DeltaMagZeroEsempio1}
+%\end{figure}
+%
+%La figura\nobs\vref{fig:DeltaMagZeroEsempio1} permette di confrontare i due grafici. Questi sono praticamente identici. \'{E} la terza riga, continua nel primo esempio, tratteggiata nel secondo, che fa la differenza. Guardando i due grafici, vediamo che all'esterno dell'intervallo formato dalle due soluzioni, il grafico ha lo stesso segno del coefficiente $a$. Mentre nello spazio compreso fra le due soluzioni, il segno è opposto a quello di $a$. Otteniamo due grafici come\nobs\vrefrange{graf:dis2GDeltaMagZa2x}{graf:dis2GDeltaMagZb2x}. Questo è riassunto graficamente dalla prima riga della tabella\nobs\vref{tab:segnodisequazioni2grado}
+%\begin{figure}
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%\includestandalone[width=\textwidth]{quarto/DisSecGrado/DeltaMaggioreDiZeroAmaggioreDizero}
+%		\caption{$\Delta>0$ $a>0$}\label{graf:dis2GDeltaMagZa2x}
+%	\end{subfigure}%
+%\quad
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%	\includestandalone[width=\textwidth]{quarto/DisSecGrado/DeltaMaggioreDiZeroAminoreDizero}
+%		\caption{$\Delta>0$ $a<0$}\label{graf:dis2GDeltaMagZb2x}
+%	\end{subfigure}
+%\vskip .8cm
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%		\includestandalone[width=\textwidth]{quarto/DisSecGrado/DeltaUgualeaZeroAmaggioreDizero}
+%		\caption{$\Delta=0$ $a>0$}\label{graf:dis2GDeltaUguaZa2x}
+%			\end{subfigure}%
+%\quad
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%		\includestandalone[width=\textwidth]{quarto/DisSecGrado/DeltaUgualeaZeroAminoreDizero}
+%		\caption{$\Delta=0$ $a<0$}\label{graf:dis2GDeltaUguaZb2x}
+%	\end{subfigure}
+%\vskip .8cm
+%\begin{subfigure}[b]{.5\linewidth}
+%	\centering
+%		\includestandalone[width=\textwidth]{quarto/DisSecGrado/DeltaMinoreZeroAmaggioreDizero}
+%	\caption{$\Delta<0$ $a>0$}\label{graf:dis2GDeltaMinorZa2x}
+%\end{subfigure}%
+%\quad
+%\begin{subfigure}[b]{.5\linewidth}
+%	\centering
+%\includestandalone[width=\textwidth]{quarto/DisSecGrado/DeltaMinoreZeroAminoreDizero}
+%	\caption{$\Delta<0$ $a<0$}\label{graf:dis2GDeltaMinorZb2x}
+%\end{subfigure}
+%	\caption{Grafici disequazione di secondo grado}
+%\end{figure}
+%\begin{table}
+%	\begin{tabular}{@{}m{1cm}m{7.8cm}m{7.8cm}}
+%	%	\toprule
+%		& \centering $a>0$ & \centering$a<0$\tabularnewline
+%\centering$\Delta>0$ &\tabincludestandalone[width=7.5cm]{quarto/DisSecGrado/DeltaMaggioreDiZeroAmaggioreDizero}  & \vskip .8cm 	\tabincludestandalone[width=7.5cm]{quarto/DisSecGrado/DeltaMaggioreDiZeroAminoreDizero} \\[1cm] 
+%		\centering$\Delta=0$ & 	\tabincludestandalone[width=7.5cm]{quarto/DisSecGrado/DeltaUgualeaZeroAmaggioreDizero} & \vskip .8cm \tabincludestandalone[width=7.5cm]{quarto/DisSecGrado/DeltaUgualeaZeroAminoreDizero}\\[1cm] 
+%		\centering$\Delta<0$ & \tabincludestandalone[width=7.5cm]{quarto/DisSecGrado/DeltaMinoreZeroAmaggioreDizero} &\vskip .8cm \tabincludestandalone[width=7.5cm]{quarto/DisSecGrado/DeltaMinoreZeroAminoreDizero}\\[1cm] 
+%	%	\bottomrule
+%	\end{tabular}
+%	\caption{Segno disequazioni secondo grado}
+%\end{table}
+%\begin{table}
+%	\centering
+%	\begin{tikzpicture}
+%	\tkzTabInit[color,lgt=5,espcl=3]%
+%	{$x$ / .8,$\Delta>0$\\ Il segno di\\ $ax^2+bx+c$ /2}%
+%	{$-\infty$,$x_1$,$x_2$,$+\infty$}%
+%	\tkzTabLine{ , \genfrac{}{}{0pt}{0}{\text{segno di}}{a}, z
+%		, \genfrac{}{}{0pt}{0}{\text{segno}}{\text{opposto di}\ a}, z
+%		, \genfrac{}{}{0pt}{0}{\text{segno di}}{a}, }
+%	\end{tikzpicture}\\
+%	\begin{tikzpicture}
+%	\tkzTabInit[color,lgt=5,espcl=3]%
+%	{$x$ / .8, $\Delta=0$\\ Il segno di\\ $ax^2+bx+c$ / 2}%
+%	{$-\infty$,$x_1$,$+\infty$}%
+%	\tkzTabLine{ , \genfrac{}{}{0pt}{0}{\text{segno di}}{ a} , z
+%		, \genfrac{}{}{0pt}{0}{\text{segno di}}{a}, }
+%	\end{tikzpicture}\\
+%	\begin{tikzpicture}
+%	\tkzTabInit[color,lgt=5,espcl=5]%
+%	{$x$/.8,$\Delta<0$\\ Il segno di\\ $ax^2+bx+c$/2}%
+%	{$-\infty$,$+\infty$}%
+%	\tkzTabLine{ , \genfrac{}{}{0pt}{0}{\text{segno di}}{ a}, }
+%	\end{tikzpicture}
+%	\caption{Segno disequazione di secondo grado}
+%	\label{tab:segnodisequazioni2grado}
+%\end{table}
+%
+%Consideriamo una disequazione del tipo
+%\begin{equation}
+%2x^2-4x+2\geq 0\label{equ:DisSecondoGrado3}
+%\end{equation} 
+%come negli esempi precedenti abbiamo un trinomio di secondo grado  posto maggiore o uguale di zero. Anche qui trasformiamo  il problema in un altro. Per far ciò  utilizziamo le relazioni\nobs\vrefrange{DisTrinsecGrado0}{DisTrinsecGrado2}.
+%Possiamo scrivere:
+%\begin{align}
+%&2x^2-4x+2\\
+%&x_{1}=\dfrac{4+\sqrt{0}}{4}\notag
+%&x_{1}=\dfrac{4-\sqrt{0}}{4}\notag\\
+%&x_{1}=\dfrac{4}{4}=1\notag
+%&x_{1}=\dfrac{4}{4}=1\notag\\
+%&2x^2-4x+2=2(x-1)(x-1)=2(x-1)^2\label{DisTrinsecGradoEs3}
+%\end{align}
+%La relazione\nobs\vref{DisTrinsecGradoEs1} trasforma un trinomio di secondo grado nel prodotto di un binomio al quadrato e un numero. Quindi la disequazione\nobs\vref{equ:DisSecondoGrado3} diventa 
+%\begin{equation}
+%2(x-1)^2\geq 0\label{equ:DisSecondogrado3a}
+%\end{equation} 
+%Ottengo il grafico\nobs\vref{fig:esempioDisSecGrad3}. Il disegno mostra tre righe una per ogni fattore del prodotto\nobs\vref{equ:DisSecondogrado3a}. Nel particolare il trinomio è positivo per $x1$ e $x>1$, vale zero  per $x=1$
+%\begin{figure}
+%	\centering
+%	\begin{subfigure}[b]{.4\linewidth}
+%		\centering
+%		\includestandalone[width=\textwidth]{quarto/DisSecGrado/DisSecGradoesempio3}
+%		\caption{Esempio 3}
+%		\label{fig:esempioDisSecGrad3}
+%	\end{subfigure}%
+%	\quad\centering
+%	\begin{subfigure}[b]{.4\linewidth}
+%		\centering
+%		\includestandalone[width=\textwidth]{quarto/DisSecGrado/DisSecGradoesempio4}
+%		\caption{Esempio 4}
+%		\label{fig:esempioDisSecGrad4}
+%	\end{subfigure}%
+%	\caption{$\Delta=0$}
+%	\label{fig:DeltaUguZeroEsempio2}
+%\end{figure}
+%
+%Continuiamo con gli esempi
+%\begin{equation}
+%-3x^2+12x-12\geq 0\label{equ:DisSecondoGrado4}
+%\end{equation} 
+%come in precedenza abbiamo un trinomio di secondo grado  posto maggiore o uguale di zero.  Utilizziamo anche qui le relazioni\nobs\vrefrange{DisTrinsecGrado0}{DisTrinsecGrado2}.
+%Possiamo scrivere:
+%\begin{align}
+%&-3x^2+12x-12\\
+%&x_{1}=\dfrac{-12+\sqrt{0}}{-6}\notag
+%&x_{1}=\dfrac{-12-\sqrt{0}}{-6}\notag\\
+%&x_{1}=\dfrac{-12}{-6}=2\notag
+%&x_{1}=\dfrac{-12}{-6}=2\notag\\
+%&-3x^2+12x-12=-3(x-2)(x-2)=-3(x-2)^2\label{DisTrinsecGradoEs4}
+%\end{align}
+%La relazione\nobs\vref{DisTrinsecGradoEs1} trasforma un trinomio di secondo grado nel prodotto di un binomio al quadrato e un numero. Quindi la disequazione\nobs\vref{equ:DisSecondoGrado4} diventa 
+%\begin{equation}
+%-3(x-2)^2\geq 0\label{equ:DisSecondogrado4a}
+%\end{equation} 
+%Ottengo il grafico\nobs\vref{fig:esempioDisSecGrad4}. Il disegno mostra tre righe una per ogni fattore del prodotto\nobs\vref{equ:DisSecondogrado4a}. Nel particolare il trinomio è negativo per $x<2$ e $x>2$, vale zero  per $x=2$
+%
+%Confrontiamo i due grafici tramite la figura\nobs\vref{fig:DeltaUguZeroEsempio2}. Anche  la terza  riga, continua nel primo esempio, tratteggiata nel secondo, fa la differenza. Guardando i due grafici, vediamo che il grafico ha lo stesso segno del coefficiente $a$ tranne per $x=x_1$ in cui vale zero.  come\nobs\vrefrange{graf:dis2GDeltaUguaZa2x}{graf:dis2GDeltaUguaZb2x}. Questo è riassunto graficamente dalla seconda riga della tabella\nobs\vref{tab:segnodisequazioni2grado}
+%
+%Nella prima coppia di esempi avevamo due soluzioni distinte, nella seconda le soluzioni erano coincidenti. Resta da considerare quando le soluzioni non esistono.
+%
+%In questo caso il discriminate dell'equazione è un numero minore di zero. Si può dimostrare con qualche calcolo in più che i grafici sono come quelli delle figure\nobs\vrefrange{graf:dis2GDeltaMinorZa2x}{graf:dis2GDeltaMinorZb2x}. In questo caso il grafico ha sempre lo stesso segno di $a$  nella terza riga della tabella\nobs\vref{tab:segnodisequazioni2grado}
+%\begin{table}
+%	\centering
+%	 \begin{tabular}{@{}cc>{\centering}m{6.5cm}>{\centering}m{6.5cm}}
+%	 	&  & $a>0$ & \vskip .2cm $a<0$ \tabularnewline[0.5cm] 
+%	 	&  & 	\tabincludestandalone[width=6.5cm]{quarto/DisSecGrado/DeltaMaggioreDiZeroAmaggioreDizero}  & \vskip .2cm	\tabincludestandalone[width=6.5cm]{quarto/DisSecGrado/DeltaMaggioreDiZeroAminoreDizero} \tabularnewline[0.5cm] 
+%	 	\multirow{4}{1cm}{$\Delta>0$}	& $ax^2+bx+c\geq 0$ & $x\leq x_1$ e $x\geq x_2$  & $x_1\leq x \leq x_2$ \tabularnewline  
+%	 	& $ax^2+bx+c > 0$ &$x< x_1$ e $x>x_2$  & $x_1< x < x_2$ \tabularnewline
+%	 	& $ax^2+bx+c\leq 0$ & $x_1\leq x \leq x_2$ & $x\leq x_1$ e $x\geq x_2$ \tabularnewline  
+%	 	& $ax^2+bx+c< 0$ & $x_1< x < x_2$ & $x< x_1$ e $x>x_2$ \tabularnewline
+%	 	&&&\tabularnewline
+%	 	&  & 	\tabincludestandalone[width=6.5cm]{quarto/DisSecGrado/DeltaUgualeaZeroAmaggioreDizero} &\vskip .2cm  \tabincludestandalone[width=6.5cm]{quarto/DisSecGrado/DeltaUgualeaZeroAminoreDizero}\tabularnewline[0.5cm] 
+%	 	\multirow{4}{1cm}{$\Delta=0$}	& $ax^2+bx+c\geq 0$ & Sempre & $x=x_1$ \tabularnewline  
+%	 	& $ax^2+bx+c > 0$ & Sempre $x\neq x_1$ & Mai \tabularnewline
+%	 	& $ax^2+bx+c\leq 0$ & $x=x_1 $  & Sempre \tabularnewline  
+%	 	& $ax^2+bx+c< 0$ & Mai & Sempre $x\neq x_1$ \tabularnewline  
+%	 		&&&\tabularnewline
+%	 	&  & 	\tabincludestandalone[width=6.5cm]{quarto/DisSecGrado/DeltaMinoreZeroAmaggioreDizero} &\vskip .2cm \tabincludestandalone[width=6.5cm]{quarto/DisSecGrado/DeltaMinoreZeroAminoreDizero}\tabularnewline[0.5cm] 
+%	 	\multirow{4}{1cm}{$\Delta<0$}	& $ax^2+bx+c\geq 0$ & Sempre. Uguale a zero mai & Mai \tabularnewline  
+%	 	& $ax^2+bx+c > 0$ & Sempre & Mai \tabularnewline
+%	 	& $ax^2+bx+c\leq 0$ & Mai & Sempre. Uguale a zero mai \tabularnewline  
+%	 	& $ax^2+bx+c< 0$ & Mai & Sempre \tabularnewline  
+%	 \end{tabular} 
+%	\caption{Soluzioni disequazioni secondo grado}
+%	\label{tab:SoluzioniDisequazioniSecondoGrado}
+%\end{table}
+\section{Disequazioni di secondo grado intere}
+\begin{definizionet}{Disequazione intera in forma normale}{}
+Una disequazione di secondo grado\index{Disequazione!secondo grado} intera è in forma normale se \[ax^2+bx+c\;\begin{cases}
+>\\
+<\\
+\leq\\
+\geq
+\end{cases} 0\; \text{con}\; a\neq 0\]
+\end{definizionet}
+\begin{osservazionet}{}{}
+Le seguenti disequazioni sono tutte in forma normale\index{Disequazione!forma normale}
+\begin{align*}
+&2x^2+3x+2>0\\
+&3x^2+2\leq0\\
+&-x^2+4x\geq0\\
+&5x^2\geq0
+\end{align*}
+\end{osservazionet} 
+\begin{esempiot}{Delta maggiore di zero $a$ maggiore di zero }{DeltaMaggiorediZeroamaggiore}
+	Consideriamo la disequazione in forma normale
+	\begin{align*}
+	&x^2+x-12\geq0
+	\intertext{ad essa è associata l'equazione}
+	&x^2+x-12=0\\
+	&x_{1,2}=\dfrac{-1\pm\sqrt{1+48}}{2}=\dfrac{-1\pm7}{2}=
+	\begin{cases}
+	x_1=+3\\x_2=-4
+	\end{cases}
+	\end{align*} 
+Possiamo associare alla disequazione una parabola del tipo \[y=x^2+x-12\]
+la parabola, visti i punti di intersezione calcolati prima e il coefficiente $a$ positivo, ha come grafico la figura~\vref{fig:DeltaMaggioreZeroEsempio1}. La disequazione può essere vista come \[y=x^2+x-12\geq 0 \] Guardando il grafico è evidente che $y$ è positiva per valori  di $x<-4$ e per valori di $x>3$. Inoltre è negativa per $-4<x<3$ mentre per $x=-4$ e per $x=3$ $y$ vale zero. Possiamo riportare quanto detto in precedenza nel grafico della figura~\vref{fig:DeltaMaggioreZeroGraficoEsempio1}. Possiamo risolvere la disequazione, e visto che richiede quando è maggiore o uguale a zero, la soluzione è per $x\leq -4$ o per $x\geq3$ 
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltapiuApiu}
+	\caption{$\Delta>0$ $a>0$ }
+	\label{fig:DeltaMaggioreZeroEsempio1}
+\end{figure}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltapiuApiuGrafico}
+	\caption{Segno $\Delta>0$ $a>0$}
+	\label{fig:DeltaMaggioreZeroGraficoEsempio1}
+\end{figure}
+\begin{esempiot}{Delta maggiore di zero $a$ minore di zero}{}
+	Consideriamo la disequazione in forma normale
+	\begin{align*}
+	&-2x^2+5x+7<0
+	\intertext{ad essa è associata l'equazione}
+	&-2x^2+5x+7=0\\
+	&x_{1,2}=\dfrac{-5\pm\sqrt{25+56}}{-4}=\dfrac{-5\pm9}{-4}=
+	\begin{cases}
+	x_1=+\dfrac{7}{2}\\
+	\\x_2=-1
+	\end{cases}
+	\end{align*} 
+Come per l'esempio precedente disegniamo il grafico della parabola \[y=-2x^2+5x+7\] Questa parabola, per quanto calcolato prima e per $a<0$, ha il grafico è come quello della figura~\vref{fig:DeltaMaggioreZeroEsempio2} 
+
+Possiamo dire che la parabola è negativa per valori di $x$ minori di meno uno e maggiori di $\dfrac{7}{2}$ mentre è positiva per valori di $x$ compresi tra meno uno e  $\dfrac{7}{2}$. Riportando graficamente quanto detto otteniamo il grafico~\vref{fig:DeltaMaggioreZeroGraficoEsempio2}. La soluzione è  $x\leq -4$ o per $x\geq3$ 
+\end{esempiot}
+\begin{figure}
+	\centering 
+	\includestandalone[width=7.5cm]{quarto/DisSecGrado/parabolaDeltapiuAmeno}
+	\caption{$\Delta>0$ $a<0$}
+	\label{fig:DeltaMaggioreZeroEsempio2}
+\end{figure}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltapiuAmenoGrafico}
+	\caption{Segno $\Delta>0$ $a<0$}
+	\label{fig:DeltaMaggioreZeroGraficoEsempio2}
+\end{figure}
+\begin{esempiot}{Delta uguale a zero $a$ maggiore di zero}{DeltaUgualeaZeroaMaggiore}
+	Consideriamo la disequazione in forma normale
+\begin{align*}
+&x^2-2x+1<0
+\intertext{ad essa è associata l'equazione}
+&x^2-2x+1=0\\
+&x_{1,2}=\dfrac{2\pm\sqrt{4-4}}{2}=\dfrac{2}{2}=1
+\end{align*} 
+Possiamo associare alla disequazione una parabola del tipo \[y=x^2-2x+1\]
+la parabola, visti il punto di intersezione calcolato prima e il coefficiente $a$ positivo, ha come grafico la figura~\vref{fig:DeltaUgualeaZeroEsempio3}
+
+Dal grafico è evidente che la parabola è positiva per qualunque valore di $x$, tranne che per $x=1$ in cui $y=0$. Si ottiene un grafico come quello della figura~\vref{fig:DeltaUgualeaZeroGraficoEsempio3}. La disequazione richiedendo quali sono i valori di $x$ per cui il trinomio è negativo, non ha soluzione. 
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltazeroApiuGrafico}
+	\caption{Segno $\Delta=0$ $a>0$}
+	\label{fig:DeltaUgualeaZeroGraficoEsempio3}
+\end{figure}
+\begin{figure}
+	\centering 
+	\includestandalone[width=7.5cm]{quarto/DisSecGrado/parabolaDeltazeroApiu}
+	\caption{$\Delta=0$ $a>0$}
+	\label{fig:DeltaUgualeaZeroEsempio3}
+\end{figure}
+\begin{esempiot}{Delta uguale a zero $a$ minore di zero}{}
+	Considero la disequazione
+	\begin{align*}
+	&-x^2+4x-4<0
+	\intertext{ad essa è associata l'equazione}
+	&-x^2+4x-4=0\\
+	&x_{1,2}=\dfrac{-4\pm\sqrt{16-16}}{-2}=\dfrac{-4}{-2}=2
+	\end{align*} 
+Possiamo associare alla disequazione una parabola del tipo \[y=-x^2+4x-4\]
+la parabola, visti il punto di intersezione calcolato prima e il coefficiente $a$ negativo, ha come grafico la figura~\ref{fig:DeltaUgualeaZeroEsempio4}. Il trinomio ha per segno come indicato nel grafico~\vref{fig:DeltaUgualeaZeroGraficoEsempio4}. La soluzione sarà sempre verificata con $x\neq 2$
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltazeroAmenoGrafico}
+	\caption{Segno $\Delta=0$ $a<0$}
+	\label{fig:DeltaUgualeaZeroGraficoEsempio4}
+\end{figure}
+\begin{figure}
+	\centering 
+	\includestandalone[width=7.5cm]{quarto/DisSecGrado/parabolaDeltazeroAmeno}
+	\caption{$\Delta=0$ $a<0$}
+	\label{fig:DeltaUgualeaZeroEsempio4}
+\end{figure}
+\begin{esempiot}{Delta minore di zero a maggiore di zero}{}
+	\begin{align*}
+	&x^2+x+1<0
+	\intertext{ad essa è associata l'equazione}
+	&x^2+x+1=0\\
+	&x_{1,2}=\dfrac{-1\pm\sqrt{1-4}}{2}
+	\intertext{non ha soluzione}
+	\end{align*} 
+	Per questo e dato che $a>0$ il grafico della parabola è come quello della figura~\vref{fig:DeltaminoreZeroEsempio5}. Il grafico della disequazione è il grafico~\vref{fig:DeltaMinoreZeroGraficoEsempio5}. Quindi visto che è sempre positivo la disequazione non è mai verificata.
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltamenoApiuGrafico}
+	\caption{Segno $\Delta<0$ $a>0$}
+	\label{fig:DeltaMinoreZeroGraficoEsempio5}
+\end{figure}
+\begin{figure}
+	\centering 
+	\includestandalone[width=7.5cm]{quarto/DisSecGrado/parabolaDeltamenoApiu}
+	\caption{$\Delta<0$ $a>0$}
+	\label{fig:DeltaminoreZeroEsempio5}
+\end{figure}
+\begin{esempiot}{Delta minore di zero a minore di zero}{}
+	\begin{align*}
+&-2x^2-1<0
+\intertext{ad essa è associata l'equazione}
+&-2x^2-1=0\\
+&x_{1,2}=\dfrac{0\pm\sqrt{0-8}}{2}
+\intertext{non ha soluzione}
+\end{align*} Per questo e dato che $a<0$ il grafico della parabola è come quello della figura~\vref{fig:DeltaminoreZeroEsempio6}. Il grafico corrispondente è quello della figura~\vref{fig:DeltaMinoreZeroGraficoEsempio6}
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltamenoAmenoGrafico}
+	\caption{Segno $\Delta<0$ $a<0$}
+	\label{fig:DeltaMinoreZeroGraficoEsempio6}
+\end{figure}
+\begin{figure}
+	\centering 
+	\includestandalone[width=7.5cm]{quarto/DisSecGrado/parabolaDeltamenoAmeno}
+	\caption{$\Delta<0$ $a<0$}
+	\label{fig:DeltaminoreZeroEsempio6}
+\end{figure}
+
+Ricapitolando gli esercizi precedenti, ad ogni equazione sono associati un numero detto delta\index{Equazione!delta} \[\Delta=b^2-4ac\] ed un'equazione\index{Equazione!secondo grado} di secondo grado\[ax^2+bx+c=0\]  Per risolvere una disequazione di secondo grado intera procedo come segue
+\begin{enumerate}
+	\item Metto la disequazione in forma normale
+	\item Memorizzo il segno di $a$
+	\item Risolvo l'equazione corrispondente $ax^"+bx+c=0$ tramite $x_{1,2}=\dfrac{-b\pm\sqrt{\Delta}}{2a}$. Avremo tre casi
+	\begin{description}
+		\item[3a] l'equazione ha due soluzioni distinte $x_1\neq x_2$, $\Delta>0$
+		\item[3b] l'equazione ha due soluzioni coincidenti $x_1= x_2$, $\Delta=0$
+		\item[3c] l'equazione non ha soluzioni $\Delta<0$
+	\end{description}
+\item Disegno il grafico. Dal numero delle soluzioni ho tre casi
+\begin{description}
+	\item[Caso 3a] Soluzioni distinte\begin{enumerate}
+		\item riporto le soluzioni sull'asse $x$, ordinandole dalla minore  alla maggiore.
+		\item traccio due segmenti verticali di stessa lunghezza per ogni soluzione
+		\item fuori dello spazio tra le due soluzioni, il grafico ha lo stesso segno di $a$. Quindi se $a$ è positiva fuori traccio due linee continue. Se $a$ è negativa fuori  disegno due linee tratteggiate. Tra le due soluzioni traccio l'opposto di quello che c'è fuori. Si dice che i grafici sono DICE cioè \textbf{C}oncordi \textbf{I}nterni \textbf{C}oncordi \textbf{E}sterni
+	\end{enumerate}
+\item[Caso 3b] Soluzioni coincidenti
+\begin{enumerate}
+	\item riporto la soluzione sull'asse $x$.
+	\item traccio un segmento verticale per la soluzione
+	\item  se $a$ è positiva traccio una linea continua. Se $a$ è negativa  traccio una linea tratteggiata. Il grafico è concorde tranne in un punto.
+\end{enumerate} 
+\item[Caso 3c] Nessuna soluzione
+\begin{enumerate}
+	\item se $a$ è positiva traccio una linea continua, se $a$ è negativa traccio una linea tratteggiata. Il grafico è concorde
+\end{enumerate}
+\end{description}
+\end{enumerate}
+\section{Disequazioni intere e soluzioni}
+\begin{esempiot}{$\Delta>0$ $a>0$ e soluzioni}{}
+	Troviamo il segno di $2x^2+5x+3$
+	\begin{align*}
+&2x^2+5x+3=0
+\intertext{che risolta}
+&x_{1,2}=\dfrac{-5\pm\sqrt{25-24}}{4}=\dfrac{-5\pm 1}{4}=\begin{cases}
+x_1=-\dfrac{7}{2}\\
+\\x_2=-1
+\end{cases}
+	\end{align*}
+Dato che il delta è positivo e $a$ è positivo il grafico è di tipo DICE quindi è la  figura~\vref{fig:DeltaMaggioreZeroGraficoEsempio7}.	 Al  trinomio dell'esempio possiamo associare quattro disequazioni con quattro soluzioni diverse. 
+\begin{align*}
+&2x^2+5x+3\geq0&&x\leq-\dfrac{3}{2}\quad x\geq-1\\
+&2x^2+5x+3>0&&x<-\dfrac{3}{2}\quad x>-1\\
+&2x^2+5x+3\leq 0&&-\dfrac{3}{2}\leq x\leq-1\\
+&2x^2+5x+3<0&&-\dfrac{3}{2}< x<-1
+\end{align*}
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltapiuApiuGrafico2}
+	\caption{Segno $\Delta>0$ $a>0$}
+		\label{fig:DeltaMaggioreZeroGraficoEsempio7}
+\end{figure}
+\begin{esempiot}{$\Delta>0$ $a<0$ e soluzioni}{}
+	Troviamo il segno di $-3x^2+4x+4$
+\begin{align*}
+&-3x^2+4x+4=0
+\intertext{che risolta}
+&x_{1,2}=\dfrac{-4\pm\sqrt{16+48}}{-6}=\dfrac{-4\pm 8}{-6}=\begin{cases}
+x_1=-\dfrac{2}{3}\\
+\\x_2=2
+\end{cases}
+\end{align*}
+Dato che il delta è positivo e $a$ è negativo il grafico è di tipo DICE quindi è la  figura~\vref{fig:DeltaMaggioreZeroGraficoEsempio8}.	 Al  trinomio dell'esempio possiamo associare quattro disequazioni con quattro soluzioni diverse. 
+\begin{align*}
+&-3x^2+4x+4\geq0&&-\dfrac{2}{3}\leq x\leq 2\\
+&-3x^2+4x+4>0&&-\dfrac{2}{3}< x<2\\
+&-3x^2+4x+4\leq 0&&x\leq-\dfrac{2}{3}\quad x\geq 2\\
+&-3x^2+4x+4<0&&x<-\dfrac{3}{2}\quad x>2
+\end{align*}
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltapiuAmenoGrafico2}
+	\caption{Segno $\Delta>0$ $a<0$}
+	\label{fig:DeltaMaggioreZeroGraficoEsempio8}
+\end{figure}
+\begin{esempiot}{$\Delta=0$ $a>0$}{}
+		Troviamo il segno di $x^2+6x+9$
+	\begin{align*}
+	&x^2+6x+9=0
+	\intertext{che risolta}
+	&x_{1,2}=\dfrac{-6\pm\sqrt{36-36}}{2}=-3
+	\end{align*}
+Delta è uguale a zero il coefficiente $a$ è positivo quindi il grafico è concorde con $a$ ed è come quello della figura~\vref{fig:DeltaUgualeaZeroGraficoEsempio9}
+ Al  trinomio dell'esempio possiamo associare quattro disequazioni con quattro soluzioni diverse. 
+\begin{align*}
+&x^2+6x+9\geq0&&\text{Sempre verificata}\\
+&x^2+6x+9>0&&x\neq -3\\
+&x^2+6x+9\leq 0&&x=-3\\
+&x^2+6x+9<0&&\text{Mai verificata}
+\end{align*}
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltazeroApiuGrafico2}
+	\caption{Segno $\Delta=0$ $a>0$}
+	\label{fig:DeltaUgualeaZeroGraficoEsempio9}
+\end{figure}
+\begin{esempiot}{$\Delta=0$ $a<0$}
+	Troviamo il segno di $-4x^2+12x-9$
+	\begin{align*}
+	&-4x^2+12x-9=0
+	\intertext{che risolta}
+	&x_{1,2}=\dfrac{-12\pm\sqrt{144-144}}{-8}=\dfrac{3}{4}
+	\end{align*}
+	Delta è uguale a zero il coefficiente $a$ è negativo quindi il grafico, concorde, è come quello della figura~\vref{fig:DeltaUgualeaZeroGraficoEsempio10}
+	Al  trinomio dell'esempio possiamo associare quattro disequazioni con quattro soluzioni diverse. 
+	\begin{align*}
+	&-4x^2+12x-9\geq0&&x=\dfrac{3}{4}\\
+	&-4x^2+12x-9>0&&\text{Mai verificata}\\
+	&-4x^2+12x-9\leq 0&&\text{Sempre verificata}\\
+	&-4x^2+12x-9<0&&x\neq \dfrac{3}{4}
+	\end{align*}
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltazeroAmenoGrafico2}
+	\caption{Segno $\Delta=0$ $a<0$}
+	\label{fig:DeltaUgualeaZeroGraficoEsempio10}
+\end{figure}
+\begin{esempiot}{$\Delta<0$ $a>0$}
+	Troviamo il segno di $x^2+2x+5$
+	\begin{align*}
+	&x^2+2x+5=0
+	\intertext{che risolta}
+	&x_{1,2}=\dfrac{-2\pm\sqrt{4-20}}{2}
+	\intertext{non ha soluzione}
+	\end{align*}
+	Delta è minore di zero, il coefficiente $a$ è maggiore di zero quindi il grafico, concorde, è come quello della figura~\vref{fig:DeltaMinoreZeroGraficoEsempio11}
+	Al  trinomio dell'esempio possiamo associare quattro disequazioni con quattro soluzioni diverse. 
+	\begin{align*}
+	&x^2+2x+5\geq0&&\text{Sempre maggiore di zero, mai uguale a zero}\\
+	&x^2+2x+5>0&&\text{Sempre maggiore di zero}\\
+	&x^2+2x+5\leq 0&&\text{Mai verificata}\\
+	&x^2+2x+5<0&&\text{Mai verificata}
+	\end{align*}
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltamenoApiuGrafico2}
+	\caption{Segno $\Delta<0$ $a>0$}
+	\label{fig:DeltaMinoreZeroGraficoEsempio11}
+\end{figure}
+\begin{esempiot}{$\Delta<0$ $a<0$}
+	Troviamo il segno di $-2x^2+3x-3$
+	\begin{align*}
+	&-2x^2+3x-3=0
+	\intertext{che risolta}
+	&x_{1,2}=\dfrac{-3\pm\sqrt{9-24}}{-4}
+	\intertext{non ha soluzione}
+	\end{align*}
+	Delta è minore di zero, il coefficiente $a$ è minore di zero quindi il grafico, concorde, è come quello della figura~\vref{fig:DeltaMinoreZeroGraficoEsempio12}
+	Al  trinomio dell'esempio possiamo associare quattro disequazioni con quattro soluzioni diverse. 
+	\begin{align*}
+	&-2x^2+3x-3\geq0&&\text{Mai verificata}\\
+	&-2x^2+3x-3>0&&\text{Mai verificata}\\
+	&-2x^2+3x-3\leq 0&&\text{Sempre minore di zero, uguale a zero mai}\\
+	&-2x^2+3x-3<0&&\text{Sempre verificata}
+	\end{align*}
+\end{esempiot}
+\begin{figure}
+	\centering
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/parabolaDeltamenoAmenoGrafico2}
+	\caption{Segno $\Delta<0$ $a<0$}
+	\label{fig:DeltaMinoreZeroGraficoEsempio12}
+\end{figure}
+%\altapriorita{aggiungere disequazioni frazionarie di secondo grado}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%\section{Metodo grafico}
+%\label{sec:MetodoGrafico}
+%\begin{figure}
+%	
+%		\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (3,0);
+%		%\foreach \x in {-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5,3}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-2.28) rectangle (3,1);
+%		\draw [samples=50,rotate around={0:(0,-2.13)},xshift=0cm,yshift=-2.13cm] %plot (\x,\x^2/2/0.2599999999999998);
+%		plot(\x,{(\x)^2-0.1}); 
+%		%\draw [samples=50,rotate around={0:(0,-2.13)},xshift=0cm,yshift=-2.13cm] plot (\x,(\x)^2/2/0.2599999999999998);
+%		\draw (-3,0.37) node[anchor=north west] {$+++++$};
+%		\draw (-1.17,0.05) node[anchor=north west] {$x_1$};
+%		\draw (1.11,0.05) node[anchor=north west] {$x_2$};
+%		\draw (1.17,0.37) node[anchor=north west] {$++++++$};
+%		\draw (-0.7,-0.06) node[anchor=north west] {$-----$};
+%		\end{tikzpicture}
+%		\caption{$\Delta>0$ $a>0$}\label{graf:dis2GDeltaMagZGa1}
+%	\end{subfigure}%
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%			\draw[->,color=black] (-3,0) -- (3,0);
+%			%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%			%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%			\clip(-3,-1) rectangle (3,2.26);
+%			\draw [samples=50,rotate around={-180:(0,2.13)},xshift=0cm,yshift=2.13cm] 
+%			%plot (\x,\x^2/2/0.2599999999999998);
+%			plot(\x,{(-\x)^2-0.1}); 
+%			\draw (-0.8,0.37) node[anchor=north west] {$+++++$};
+%			\draw (-1.17,0.04) node[anchor=north west] {$x_1$};
+%			\draw (1.11,0.06) node[anchor=north west] {$x_2$};
+%			\draw (-3,-0.37) node[anchor=north west] {$-----$};
+%			\draw (1.39,-0.37) node[anchor=north west] {$-----$};
+%			\end{tikzpicture}
+%		\caption{$\Delta>0$ $a<0$}\label{graf:dis2GDeltaMagZGb1}
+%	\end{subfigure}
+%		\begin{subfigure}[b]{.5\linewidth}
+%			\centering
+%			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%			\draw[->,color=black] (-3,0) -- (3,0);
+%			%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%			%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%			\clip(-3,-0.3) rectangle (3,0.5);
+%			\draw (-1,0.5)-- (-1,0);
+%			\draw (1,0.5)-- (1,0);
+%			\draw [line width=1.2pt,dash pattern=on 5pt off 5pt] (-1,0.5) -- (1,0.5);
+%			\draw (1,0.5)-- (3,0.5);
+%			\draw (-1,0.5)-- (-3,0.5);
+%			\draw (-1.02,0.02) node[anchor=north west] {$x_1$};
+%			\draw (0.98,0.02) node[anchor=north west] {$x_2$};
+%			\end{tikzpicture}
+%			\caption{$\Delta>0$ $a>0$}\label{graf:dis2GDeltaMagZGa2}
+%		\end{subfigure}%
+%		\begin{subfigure}[b]{.5\linewidth}
+%			\centering
+%				\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%				\draw[->,color=black] (-3,0) -- (3,0);
+%				%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%				%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%				\clip(-3,-0.3) rectangle (3,0.5);
+%				\draw (-1,0.5)-- (-1,0);
+%				\draw (1,0.5)-- (1,0);
+%				\draw (-1,0.5)-- (1,0.5);
+%				\draw [dash pattern=on 5pt off 5pt] (1,0.5)-- (3.0,0.5);
+%				\draw [dash pattern=on 5pt off 5pt] (-1,0.5)-- (-3.0,0.5);
+%				\draw (-1.02,0.02) node[anchor=north west] {$x_1$};
+%				\draw (0.98,0.02) node[anchor=north west] {$x_2$};
+%				\end{tikzpicture}
+%			\caption{$\Delta>0$ $a<0$}\label{graf:dis2GDeltaMagZGb2}
+%		\end{subfigure}
+%	\caption{$\Delta>0$}%
+%	\label{fig:deltamz}
+%\end{figure}
+%
+%\begin{figure}
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%			\draw[->,color=black] (-3,0) -- (2.98,0);
+%			%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%			%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%			\clip(-3,-0.29) rectangle (2.98,2);
+%			\draw [samples=50,rotate around={0:(0,0)},xshift=0cm,yshift=0cm]
+%			%plot (\x,\x^2/2/1.0);
+%			plot(\x,{(\x)^2}); 
+%			\draw (0,0.02) node[anchor=north west] {$x_1$};
+%			\draw (-3,0.37) node[anchor=north west] {$+++++++++++++++++++++$};
+%			\end{tikzpicture}
+%		\caption{$\Delta=0$ $a>0$}\label{graf:dis2GDeltaUguaZGa1}
+%	\end{subfigure}%
+%	\qquad
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (2.98,0);
+%		%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-2) rectangle (2.98,0.29);
+%		\draw [samples=50,rotate around={-180:(0,0)},xshift=0cm,yshift=0cm] 
+%		%plot (\x,\x^2/2/1.0);
+%		plot(\x,{(-\x)^2}); 
+%		\draw (0,0.02) node[anchor=north west] {$x_1$};
+%		\draw (-3,0.37) node[anchor=north west] {$---------------------$};
+%		\end{tikzpicture}
+%		\caption{$\Delta=0$ $a<0$}\label{graf:dis2GDeltaDeltaUguaZGb1}
+%	\end{subfigure}
+%		\begin{subfigure}[b]{.5\linewidth}
+%			\centering
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (3,0);
+%		%\foreach \x in {-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5,3}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-0.3) rectangle (3,0.5);
+%		\draw (0,0.5)-- (0,0);
+%		\draw [domain=-3:3] plot(\x,{(--0.56-0*\x)/1.12});
+%		\draw (-0.03,0.02) node[anchor=north west] {$x_1$};
+%		\end{tikzpicture}
+%			\caption{$\Delta=0$ $a>0$}\label{graf:dis2GDeltaUguaZGa2}
+%		\end{subfigure}%
+%		\qquad
+%		\begin{subfigure}[b]{.5\linewidth}
+%			\centering
+%			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%			\draw[->,color=black] (-3,0) -- (3,0);
+%			\foreach \x in {-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5,3}
+%			\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%			\clip(-3,-0.3) rectangle (3,0.5);
+%			\draw (0,0.5)-- (0,0);
+%			%\draw [domain=-3:3] plot(\x,{(--0.56-0*\x)/1.12});
+%			%\draw [dash pattern=on 5pt off 5pt,domain=-3:3] plot(\x,{(--1.18-0*\x)/1.18});
+%			\draw [dash pattern=on 5pt off 5pt,domain=-3:3] plot(\x,{(--0.56-0*\x)/1.12});
+%			\draw (-0.03,0.02) node[anchor=north west] {$x_1$};
+%			\end{tikzpicture}
+%			\caption{$\Delta=0$ $a<0$}\label{graf:dis2GDeltaUguaZGb2}
+%		\end{subfigure}
+%		\caption{$\Delta=0$}%
+%		\label{fig:deltaugz}
+%\end{figure}
+%
+%
+%\begin{figure}
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (3,0);
+%		%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-0.3) rectangle (3,2);
+%		\draw [samples=50,rotate around={0:(0,0.15)},xshift=0cm,yshift=0.15cm] 
+%		plot(\x,{(\x)^2+.2}); 
+%		%plot (\x,\x^2/2/0.3);
+%		\draw (-3,-0.01) node[anchor=north west] {$+++++++++++++++++++++$};
+%		\end{tikzpicture}
+%		\caption{$\Delta<0$ $a>0$}\label{graf:dis2GDeltaMinorZGa1}
+%	\end{subfigure}%
+%	\qquad
+%	\begin{subfigure}[b]{.5\linewidth}
+%		\centering
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (3,0);
+%		%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-2) rectangle (3,0.3);
+%		\draw [samples=50,rotate around={-180:(0,-0.15)},xshift=0cm,yshift=-0.15cm] 
+%		%plot (\x,\x^2/2/0.3);
+%		plot(\x,{(-\x)^2+.2}); 
+%		\draw (-3,0.37) node[anchor=north west] {$---------------------$};
+%		\end{tikzpicture}
+%		\caption{$\Delta<0$ $a<0$}\label{graf:dis2GDeltaMinorZGb1}
+%	\end{subfigure}
+%	\begin{subfigure}[b]{.5\linewidth}
+%			\centering
+%			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%			\draw[->,color=black] (-3,0) -- (3,0);
+%			%\foreach \x in {-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5,3}
+%			%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%			\clip(-3,-0.3) rectangle (3,0.5);
+%			\draw [domain=-3:3] plot(\x,{(--0.56-0*\x)/1.12});
+%			\end{tikzpicture}
+%			\caption{$\Delta<0$ $a>0$}\label{graf:dis2GDeltaMinorZGa2}
+%	\end{subfigure}%
+%	\begin{subfigure}[b]{.5\linewidth}
+%			\centering
+%			\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%			\draw[->,color=black] (-3,0) -- (3,0);
+%			%\foreach \x in {-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5,3}
+%			%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%			\clip(-3,-0.3) rectangle (3,0.5);
+%			\draw [dash pattern=on 5pt off 5pt,domain=-3:3] plot(\x,{(--0.56-0*\x)/1.12});
+%			\end{tikzpicture}
+%			\caption{$\Delta<0$ $a<0$}\label{graf:dis2GDeltaMinorZGb2}
+%	\end{subfigure}
+%	\caption{$\Delta<0$}%
+%	\label{fig:deltaminz}
+%\end{figure}
+
+%\begin{table}[H]
+%	%\ContinuedFloat
+%	\centering%
+%	\subfloat[][$\Delta<0$ $a>0$\label{graf:dis2GDeltaMinorZGa1}]{
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (3,0);
+%		%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-0.3) rectangle (3,2);
+%		\draw [samples=50,rotate around={0:(0,0.15)},xshift=0cm,yshift=0.15cm] 
+%		plot(\x,{(\x)^2+.2}); 
+%		%plot (\x,\x^2/2/0.3);
+%		\draw (-3,-0.01) node[anchor=north west] {$+++++++++++++++++++++$};
+%		\end{tikzpicture}
+%	}
+%	\subfloat[][$\Delta<0$ $a<0$\label{graf:dis2GDeltaMinorZGb1}]{
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (3,0);
+%		%\foreach \x in {-3,-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-2) rectangle (3,0.3);
+%		\draw [samples=50,rotate around={-180:(0,-0.15)},xshift=0cm,yshift=-0.15cm] 
+%		%plot (\x,\x^2/2/0.3);
+%		plot(\x,{(-\x)^2+.2}); 
+%		\draw (-3,0.37) node[anchor=north west] {$---------------------$};
+%		\end{tikzpicture}
+%	}\quad%
+%	\subfloat[][$\Delta<0$ $a>0$\label{graf:dis2GDeltaMinorZGa2}]{
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (3,0);
+%		%\foreach \x in {-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5,3}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-0.3) rectangle (3,0.5);
+%		\draw [domain=-3:3] plot(\x,{(--0.56-0*\x)/1.12});
+%		\end{tikzpicture}
+%	}
+%	\subfloat[][$\Delta<0$ $a<0$\label{graf:dis2GDeltaMinorZGb2}]{
+%		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+%		\draw[->,color=black] (-3,0) -- (3,0);
+%		%\foreach \x in {-2.5,-2,-1.5,-1,-0.5,0.5,1,1.5,2,2.5,3}
+%		%\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+%		\clip(-3,-0.3) rectangle (3,0.5);
+%		\draw [dash pattern=on 5pt off 5pt,domain=-3:3] plot(\x,{(--0.56-0*\x)/1.12});
+%		\end{tikzpicture}}
+%	\caption{$\Delta<0$}%
+%	\label{fig:deltaminz}
+%	%\label{graf:dis2Ggrafici}
+%\end{table}
+

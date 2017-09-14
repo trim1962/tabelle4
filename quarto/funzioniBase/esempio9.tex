@@ -1,0 +1,18 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{pgfplots}
+
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[xmin=0,xmax=6,ymin=0,ymax=6, %grid,
+axis x line=middle,xtick={0,1,...,6},ytick={0,1,...,6},
+axis y line=middle,xlabel=$x$,ylabel=$y$]
+\addplot [samples=300] {((x)^0.5)};
+\end{axis}
+\end{tikzpicture}
+\end{document}

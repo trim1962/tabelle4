@@ -1,0 +1,23 @@
+% Tikz File 'mytikz.tex'
+\documentclass{standalone}
+%\input{../../Mod_base/grafica}
+\input{../Mod_base/grafica}
+\input{../Mod_base/simboli_operatori}
+%\input{../Mod_base/unita_misura}
+%\usetikzlibrary{...}
+\begin{document}
+\begin{tikzpicture}
+\draw[ -triangle 90](0,0)--(5,0);
+\draw(2,0)--(2,1);
+\draw[dashed](2,1)--(0,1);
+\draw(2,1)--(5,1);
+\draw(2,0)--(2,2);
+\draw(2,2)--(5,2);
+\draw[dashed](2,2)--(0,2);
+\node at (2,-0.5) {$2$};
+\node at (2,2) {$\bullet$};
+\draw[dashed] (0,3)--(5,3);
+\end{tikzpicture}
+
+
+\end{document}

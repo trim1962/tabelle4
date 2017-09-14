@@ -1,0 +1,22 @@
+\documentclass[10pt]{standalone}
+
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-3.,0.) -- (5.,0.);
+\foreach \x in {-2.,2.,4.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-4.) -- (0.,10.5);
+\foreach \y in {-4.,-2.,2.,4.,6.,8.,10.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-3.,-4.) rectangle (5.,10.5);
+\draw[line width=1.2pt,color=red,smooth,samples=100,domain=-3.0:5.0] plot(\x,{0-2.0*(\x)^(2.0)+5.0*(\x)+7.0});
+\draw [dash pattern=on 7pt off 7pt] (-1.,-4.) -- (-1.,10.5);
+\draw [dash pattern=on 7pt off 7pt] (3.5,-4.) -- (3.5,10.5);
+\end{tikzpicture}
+\end{document}
