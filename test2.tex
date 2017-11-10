@@ -1,0 +1,37 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage{amsmath}
+%\usepackage{amsfonts}
+\usepackage{amssymb}
+\input{../Mod_base/base}
+\input{../Mod_base/matematica}
+\input{../Mod_base/tabelle}
+\input{../Mod_base/rifIndici}
+
+\input{../Mod_base/grafica}
+\input{../Mod_base/tcolorboxgest}
+\crefname{graf}{grafico}{grafici}
+\usepackage{enumitem}
+\DeclareCaptionType[fileext=lod]{diagram}
+\newcommand\litem[1]{\item{\bfseries #1,\enspace}}
+\newenvironment{tabitemize}
+{\vspace*{-\baselineskip}\itemize[topsep=1ex,leftmargin=*]}
+{\enditemize\mbox{}\vspace*{-\baselineskip}\vspace*{-2ex}}
+\begin{document}
+\tableofcontents 
+\cleardoublepage
+\listoftables
+\addcontentsline{toc}{chapter}{\listtablename}
+\cleardoublepage
+\listoffigures
+\addcontentsline{toc}{chapter}{\listfigurename}
+\cleardoublepage\renewcommand\lstlistlistingname{Elenco esempi}
+\addcontentsline{toc}{chapter}{\lstlistlistingname}
+\addcontentsline{toc}{section}{Esempi}
+\lstlistoflistings{}
+\tcblistof[\section*]{thm}{Esempi}
+\tcblistof[\section*]{sfnz}{Esempi di funzioni}
+	\chapter{Funzioni esempi}
+
+%\input{quarto/razionali}
+%\input{quarto/irrazionali}
+\end{document}
