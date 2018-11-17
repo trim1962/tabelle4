@@ -1,2 +1,5 @@
-Warning: File 'tabellequarto.slo' is empty.
-Have you used any entries defined in glossary 'symbols'?
+This is makeindex, version 2.15 [TeX Live 2018/W32TeX] (kpathsea + Thai support).
+Scanning style file ./tabellequarto.ist.............................done (29 attributes redefined, 0 ignored).
+Scanning input file tabellequarto.sbl...done (0 entries accepted, 0 rejected).
+Nothing written in tabellequarto.sym.
+Transcript written in tabellequarto.slg.

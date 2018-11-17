@@ -1,7 +1,5 @@
-This is makeindex, version 2.15 [TeX Live 2016/W32TeX] (kpathsea + Thai support).
+This is makeindex, version 2.15 [TeX Live 2018/W32TeX] (kpathsea + Thai support).
 Scanning style file ./tabellequarto.ist.............................done (29 attributes redefined, 0 ignored).
-Scanning input file tabellequarto.glo....done (3 entries accepted, 0 rejected).
-Sorting entries....done (4 comparisons).
-Generating output file tabellequarto.gls....done (12 lines written, 0 warnings).
-Output written in tabellequarto.gls.
+Scanning input file tabellequarto.glo...done (0 entries accepted, 0 rejected).
+Nothing written in tabellequarto.gls.
 Transcript written in tabellequarto.glg.

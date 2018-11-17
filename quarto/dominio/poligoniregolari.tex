@@ -1,0 +1,117 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{zzttqq}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{ududff}{rgb}{0.5333333333333333,0.5333333333333333,0.5333333333333333}
+\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw [color=cqcqcq,, xstep=2.0cm,ystep=2.0cm] (-4.1140325865122955,-2.1565395624352166) grid (12.238196155320365,10.453101615245615);
+\draw[->,color=black] (-4.1140325865122955,0.) -- (12.238196155320365,0.);
+\foreach \x in {-4.,-2.,2.,4.,6.,8.,10.,12.}
+\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+\draw[->,color=black] (0.,-2.1565395624352166) -- (0.,10.453101615245615);
+\foreach \y in {-2.,2.,4.,6.,8.,10.}
+\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-4.1140325865122955,-2.1565395624352166) rectangle (12.238196155320365,10.453101615245615);
+\fill[line width=2.pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612] (-2.,0.) -- (2.,0.) -- (0.,3.4641016151377553) -- cycle;
+\fill[line width=2.pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612] (-2.,0.) -- (2.,0.) -- (2.,4.) -- (-2.,4.) -- cycle;
+\fill[line width=2.pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612] (-2.,0.) -- (2.,0.) -- (3.23606797749979,3.804226065180613) -- (0.,6.155367074350506) -- (-3.2360679774997894,3.8042260651806146) -- cycle;
+\fill[line width=2.pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612] (-2.,0.) -- (2.,0.) -- (4.,3.464101615137755) -- (2.,6.9282032302755105) -- (-2.,6.928203230275511) -- (-4.,3.464101615137758) -- cycle;
+\fill[line width=2.pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612] (-2.,0.) -- (2.,0.) -- (4.4939592074349335,3.1273259298721183) -- (3.6038754716096766,7.027037578599412) -- (0.,8.762572535069644) -- (-3.6038754716096757,7.027037578599414) -- (-4.4939592074349335,3.12732592987212) -- cycle;
+\fill[line width=2.pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612] (-2.,0.) -- (2.,0.) -- (4.82842712474619,2.8284271247461894) -- (4.82842712474619,6.828427124746189) -- (2.,9.65685424949238) -- (-2.,9.65685424949238) -- (-4.82842712474619,6.828427124746191) -- (-4.828427124746191,2.828427124746191) -- cycle;
+\draw [line width=2.pt] (-2.,0.)-- (2.,0.);
+\draw [line width=2.pt,color=zzttqq] (-2.,0.)-- (2.,0.);
+\draw [line width=2.pt,color=zzttqq] (2.,0.)-- (0.,3.4641016151377553);
+\draw [line width=2.pt,color=zzttqq] (0.,3.4641016151377553)-- (-2.,0.);
+\draw [line width=2.pt,color=zzttqq] (-2.,0.)-- (2.,0.);
+\draw [line width=2.pt,color=zzttqq] (2.,0.)-- (2.,4.);
+\draw [line width=2.pt,color=zzttqq] (2.,4.)-- (-2.,4.);
+\draw [line width=2.pt,color=zzttqq] (-2.,4.)-- (-2.,0.);
+\draw [line width=2.pt,color=zzttqq] (-2.,0.)-- (2.,0.);
+\draw [line width=2.pt,color=zzttqq] (2.,0.)-- (3.23606797749979,3.804226065180613);
+\draw [line width=2.pt,color=zzttqq] (3.23606797749979,3.804226065180613)-- (0.,6.155367074350506);
+\draw [line width=2.pt,color=zzttqq] (0.,6.155367074350506)-- (-3.2360679774997894,3.8042260651806146);
+\draw [line width=2.pt,color=zzttqq] (-3.2360679774997894,3.8042260651806146)-- (-2.,0.);
+\draw [line width=2.pt,color=zzttqq] (-2.,0.)-- (2.,0.);
+\draw [line width=2.pt,color=zzttqq] (2.,0.)-- (4.,3.464101615137755);
+\draw [line width=2.pt,color=zzttqq] (4.,3.464101615137755)-- (2.,6.9282032302755105);
+\draw [line width=2.pt,color=zzttqq] (2.,6.9282032302755105)-- (-2.,6.928203230275511);
+\draw [line width=2.pt,color=zzttqq] (-2.,6.928203230275511)-- (-4.,3.464101615137758);
+\draw [line width=2.pt,color=zzttqq] (-4.,3.464101615137758)-- (-2.,0.);
+\draw [line width=2.pt,color=zzttqq] (-2.,0.)-- (2.,0.);
+\draw [line width=2.pt,color=zzttqq] (2.,0.)-- (4.4939592074349335,3.1273259298721183);
+\draw [line width=2.pt,color=zzttqq] (4.4939592074349335,3.1273259298721183)-- (3.6038754716096766,7.027037578599412);
+\draw [line width=2.pt,color=zzttqq] (3.6038754716096766,7.027037578599412)-- (0.,8.762572535069644);
+\draw [line width=2.pt,color=zzttqq] (0.,8.762572535069644)-- (-3.6038754716096757,7.027037578599414);
+\draw [line width=2.pt,color=zzttqq] (-3.6038754716096757,7.027037578599414)-- (-4.4939592074349335,3.12732592987212);
+\draw [line width=2.pt,color=zzttqq] (-4.4939592074349335,3.12732592987212)-- (-2.,0.);
+\draw [line width=2.pt,color=zzttqq] (-2.,0.)-- (2.,0.);
+\draw [line width=2.pt,color=zzttqq] (2.,0.)-- (4.82842712474619,2.8284271247461894);
+\draw [line width=2.pt,color=zzttqq] (4.82842712474619,2.8284271247461894)-- (4.82842712474619,6.828427124746189);
+\draw [line width=2.pt,color=zzttqq] (4.82842712474619,6.828427124746189)-- (2.,9.65685424949238);
+\draw [line width=2.pt,color=zzttqq] (2.,9.65685424949238)-- (-2.,9.65685424949238);
+\draw [line width=2.pt,color=zzttqq] (-2.,9.65685424949238)-- (-4.82842712474619,6.828427124746191);
+\draw [line width=2.pt,color=zzttqq] (-4.82842712474619,6.828427124746191)-- (-4.828427124746191,2.828427124746191);
+\draw [line width=2.pt,color=zzttqq] (-4.828427124746191,2.828427124746191)-- (-2.,0.);
+\begin{scriptsize}
+\draw [fill=ududff] (-2.,0.) circle (2.5pt);
+\draw[color=ududff] (-1.8109017778034697,0.5352445702432255) node {$A$};
+\draw [fill=ududff] (2.,0.) circle (2.5pt);
+\draw[color=ududff] (2.1907880023281145,0.5352445702432255) node {$B$};
+\draw[color=black] (0.06039200427245103,-0.2132729425871435) node {$f$};
+\draw[color=zzttqq] (0.40586162557877487,1.4277077586178961) node {$poli1$};
+\draw [fill=zzttqq] (0.,3.4641016151377553) circle (2.5pt);
+\draw[color=zzttqq] (0.20433767981675266,3.989940783306467) node {$C$};
+\draw[color=zzttqq] (0.40586162557877487,2.262592676774846) node {$poli2$};
+\draw [fill=zzttqq] (2.,4.) circle (2.5pt);
+\draw[color=zzttqq] (2.1907880023281145,4.536934350374813) node {$D$};
+\draw [fill=zzttqq] (-2.,4.) circle (2.5pt);
+\draw[color=zzttqq] (-1.8109017778034697,4.536934350374813) node {$E$};
+\draw[color=zzttqq] (0.40586162557877487,3.011110189605215) node {$poli3$};
+\draw [fill=zzttqq] (3.23606797749979,3.804226065180613) circle (2.5pt);
+\draw[color=zzttqq] (3.4287208120091086,4.335410404612791) node {$F$};
+\draw [fill=zzttqq] (0.,6.155367074350506) circle (2.5pt);
+\draw[color=zzttqq] (0.20433767981675266,6.696119483539339) node {$G$};
+\draw [fill=zzttqq] (-3.2360679774997894,3.8042260651806146) circle (2.5pt);
+\draw[color=zzttqq] (-3.0488345874844636,4.335410404612791) node {$H$};
+\draw[color=zzttqq] (0.40586162557877487,3.7308385673267237) node {$poli4$};
+\draw [fill=zzttqq] (4.,3.464101615137755) circle (2.5pt);
+\draw[color=zzttqq] (4.206027459948338,3.989940783306467) node {$I$};
+\draw [fill=zzttqq] (2.,6.9282032302755105) circle (2.5pt);
+\draw[color=zzttqq] (2.1907880023281145,7.473426131478568) node {$J$};
+\draw [fill=zzttqq] (-2.,6.928203230275511) circle (2.5pt);
+\draw[color=zzttqq] (-1.8109017778034697,7.473426131478568) node {$K$};
+\draw [fill=zzttqq] (-4.,3.464101615137758) circle (2.5pt);
+\draw[color=zzttqq] (-3.797352100314832,3.989940783306467) node {$L$};
+\draw[color=zzttqq] (0.40586162557877487,4.421777809939371) node {$poli5$};
+\draw [fill=zzttqq] (4.4939592074349335,3.1273259298721183) circle (2.5pt);
+\draw[color=zzttqq] (4.695442756798963,3.673260297109003) node {$M$};
+\draw [fill=zzttqq] (3.6038754716096766,7.027037578599412) circle (2.5pt);
+\draw[color=zzttqq] (3.8029795684242926,7.55979353680515) node {$N$};
+\draw [fill=zzttqq] (0.,8.762572535069644) circle (2.5pt);
+\draw[color=zzttqq] (0.20433767981675266,9.28714164333677) node {$O$};
+\draw [fill=zzttqq] (-3.6038754716096757,7.027037578599414) circle (2.5pt);
+\draw[color=zzttqq] (-3.3943042087907878,7.55979353680515) node {$P$};
+\draw [fill=zzttqq] (-4.4939592074349335,3.12732592987212) circle (2.5pt);
+\draw[color=zzttqq] (-4.027665181185714,10.697809263670928) node {$Q$};
+\draw[color=zzttqq] (0.40586162557877487,5.08392791744316) node {$poli6$};
+\draw [fill=zzttqq] (4.82842712474619,2.8284271247461894) circle (2.5pt);
+\draw[color=zzttqq] (5.040912378105287,3.3565798109115392) node {$R$};
+\draw [fill=zzttqq] (4.82842712474619,6.828427124746189) circle (2.5pt);
+\draw[color=zzttqq] (5.040912378105287,7.358269591043126) node {$S$};
+\draw [fill=zzttqq] (2.,9.65685424949238) circle (2.5pt);
+\draw[color=zzttqq] (2.1907880023281145,10.179604831711442) node {$T$};
+\draw [fill=zzttqq] (-2.,9.65685424949238) circle (2.5pt);
+\draw[color=zzttqq] (-1.8109017778034697,10.179604831711442) node {$U$};
+\draw [fill=zzttqq] (-4.82842712474619,6.828427124746191) circle (2.5pt);
+\draw[color=zzttqq] (-4.027665181185714,10.697809263670928) node {$V$};
+\draw [fill=zzttqq] (-4.828427124746191,2.828427124746191) circle (2.5pt);
+\draw[color=zzttqq] (-4.027665181185714,10.697809263670928) node {$W$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
