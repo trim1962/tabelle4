@@ -1,0 +1,99 @@
+\chapter{Funzioni reali}
+\label{cha:FunzioniEquazioniEsponenziali}
+\section{Funzioni di variabili reali}
+\label{sec:FunzioniVariabileReale}
+Una prima definizione di funzione è la seguente:
+\begin{definizionet}{Funzione}{}
+Una funzione è una relazione che associa ad un elemento di un insieme (Dominio\index{Funzione!Dominio}) uno e un solo elemento di un altro insieme (Codominio\index{Funzione!Codominio}). 
+\end{definizionet}
+Se $f$ è la funzione\index{Funzione} avremo \[\function{f}{D}{C}{x}{f(x)}\]
+dove $f(x)$ è l'immagine\index{Funzione!Immagine} tramite $f$ di $x$.
+\begin{osservazionet}{}{}
+ Il biglietto del cinema è una funzione fra l'insieme degli spettatori (Dominio) e l'insieme delle poltrone di un cinema (Codominio). La figura\nobs\vref{fig:funzioniEsempio1} mostra questo. 
+ \end{osservazionet}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio1}
+		\caption{Biglietto del cinema}
+		\label{fig:funzioniEsempio1}
+	\end{subfigure}\qquad
+	\centering
+		\begin{subfigure}[b]{.4\linewidth}
+			\centering
+			\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio2}
+			\caption{Essere padre di}
+			\label{fig:funzioniEsempio2}
+		\end{subfigure}%
+%	\caption{$\Delta>0$}
+%	\label{fig:DeltaMagZeroEsempio1}
+\end{figure}
+\begin{osservazionet}{}{}
+La relazione <<essere padre di>> definita fra l'inseme dei dei padri e l'insieme dei figli, non è una funzione. Un padre infatti può avere più di un figlio come mostrato nella  figura\nobs\vref{fig:funzioniEsempio1}.
+\end{osservazionet}
+\begin{osservazionet}{}{}
+La relazione <<essere figlio di>> fra l'insieme dei figli e l'insieme e quello delle madri è una funzione. Un figlio ha una sola madre. Come nella figura\nobs\vref{fig:funzioniEsempio3}. Due figli possono avere la stessa madre ma un figlio ha sempre una sola madre.
+\end{osservazionet}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio3}
+		\caption{Essere figlio di}
+		\label{fig:funzioniEsempio3}
+	\end{subfigure}\qquad
+	%	\centering
+	%	\begin{subfigure}[b]{.4\linewidth}
+	%		\centering
+	%		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio4}
+	%		\caption{Essere padre di}
+	%		\label{fig:funzioniEsempio4}
+	%	\end{subfigure}%
+	%	%	\caption{$\Delta>0$}
+	%	%	\label{fig:DeltaMagZeroEsempio1}
+\end{figure}
+\begin{osservazionet}{}{}
+La relazione che associa ad un numero il suo quadrato è una funzione. Formalmente abbiamo \[\function{f}{\R}{\R^{+}_{0}}{x}{x^2} \] oppure possiamo scrivere $y=x^2$. In questo caso abbiamo due incognite, la $x$ viene chiamata variabile indipendente, la $y$ è detta variabile dipendente. In questo caso il dominio della funzione è $\R$ e il codominio $\R^{+}_{0}$ cioè l'insieme dei numeri reali positivo incluso lo zero. La figura\nobs\vref{fig:funzioniEsempio4} mostra alcuni valori utilizzati per l'esempio. Alla funzione è possibile associare un grafico cioè l'insieme delle coppie $x,x^2$. Il grafico\nobs\vref{fig:funzioniEsempio9} è una parabola. 
+\end{osservazionet}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio4}
+		\caption{Quadrato}
+		\label{fig:funzioniEsempio4}
+	\end{subfigure}\qquad
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio5}
+		\caption{Radice quadrata}
+		\label{fig:funzioniEsempio5}
+	\end{subfigure}%
+	%	\caption{$\Delta>0$}
+	%	\label{fig:DeltaMagZeroEsempio1}
+\end{figure}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio9}
+		
+		\caption{Radice quadrata}
+		\label{fig:funzioniEsempio9}
+	\end{subfigure}\qquad
+	\centering
+	\begin{subfigure}[b]{.4\linewidth}
+		\centering
+		\includestandalone[width=\textwidth]{quarto/funzioniBase/esempio8}
+		\caption{Grafico quadrato}
+		\label{fig:funzioniEsempio8}
+	\end{subfigure}%
+	%	\caption{$\Delta>0$}
+	%	\label{fig:DeltaMagZeroEsempio1}
+\end{figure}
+\begin{osservazionet}{}{}
+	La relazione che associa ad un numero la sua radice non è una funzione. Formalmente abbiamo \[\function{f}{\R}{\R}{x}{\sqrt{x}} \] La figura\nobs\vref{fig:funzioniEsempio5} mostra alcuni valori utilizzati per l'esempio. Dalla figura è chiaro che in questo caso non è una funzione. La relazione diventa una funzione se modifichiamo per esempio il codominio da $\R$ a $\R^{+}$. In questo caso ad un valore in ingresso corrisponde un solo valore in uscita. Il grafico\nobs\vref{fig:funzioniEsempio9} mostra il grafico della radice. 
+\end{osservazionet}
+%\section{Classificazione delle funzioni}
+%Una prima rozza classificazione delle funzioni matematiche le divide in due gruppi: intere o fratte.  

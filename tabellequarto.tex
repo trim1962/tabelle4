@@ -1,3 +1,6 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = tabellequarto.tex
 
 
 \documentclass[openany]{book}%
@@ -108,6 +111,7 @@
 	\end{center}
 }
 \listfiles
+\input{compilaUNO}
  \begin{document}
 \frontmatter
 \begin{titlepage}
@@ -141,7 +145,11 @@
 \tcblistof[\section*]{cthm}{Contro esempi}
  \listoftodos
 \mainmatter%
-\input{quarto/quarto}
+\input{CompilaDUE}
+	\backmatter
+\cleardoublepage
+\appendix
+\input{quarto/tabelle_disequazioni}
 %\glsaddall
 %\printglossaries
 \addcontentsline{toc}{chapter}{\indexname}

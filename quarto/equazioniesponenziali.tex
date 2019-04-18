@@ -8,13 +8,14 @@ Dall'equazione esponenziale\nobs\vref{def:EquazioneEsponenziale} è possibile pa
 \begin{esempiot}{Equazione esponenziale}{}
 	Risolvere l'equazione $2^{3x+1}=2^{5x+2} $
 \end{esempiot}
-\begin{NodesList}[margin=4cm]
+\begin{NodesList}%[margin=4cm]
 \begin{align*}
 2^{3x+1}=2^{5x+2}\AddNode\\
 3x+1=5x+2\AddNode\\
 3x-5x=2-1\AddNode\\
 x=-\dfrac{1}{2}\AddNode
 \end{align*}
+\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 \LinkNodes{Uguaglio gli esponenti}%
 \LinkNodes{Semplifico}%
 \LinkNodes{Risolvo}%
@@ -25,9 +26,8 @@ x=-\dfrac{1}{2}\AddNode
 Un altro tipo di equazione esponenziale si ha quando una base è una potenza dell'altra. In questo caso bisogna prima trasformare una base nell'altra utilizzando le proprietà delle potenze.
 \begin{esempiot}{Equazione esponenziale}{}
 	Risolvere l'equazione $9^{x+1}=3^{3x+4}$
-\end{esempiot}
-	In questo caso le basi sembrano diverse $9\neq 3$ ma $9$ \'{e} una potenza del $3$ si procede come segue:
-	\begin{NodesList}[margin=4cm]
+\end{esempiot}\newpage In questo caso le basi sembrano diverse $9\neq 3$ ma $9$ \'{e} una potenza del $3$ si procede come segue:
+	\begin{NodesList}%[margin=4cm]
 		\begin{align*}
 			9^{x+1}=3^{3x+4}\AddNode\\
 			(3^2)^{x+1}=3^{3x+4}\AddNode\\
@@ -37,6 +37,7 @@ Un altro tipo di equazione esponenziale si ha quando una base è una potenza del
 			2x-3x=-2+4\AddNode\\
 			x=-4\AddNode
 		\end{align*}
+		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Trasformo le basi}%
 		\LinkNodes{}%
 		\LinkNodes{Uguaglio gli esponenenti}%
@@ -49,7 +50,7 @@ Un altra situazione è il caso in cui le basi non sono uguali. Per risolverla do
 \begin{esempiot}{Equazione esponenziale}{}
 	Risolvere l'equazione $7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x$
 \end{esempiot}
-	\begin{NodesList} [margin=4cm]
+	\begin{NodesList}% [margin=4cm]
 		\begin{align*}
 			7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x\AddNode\\
 			\intertext{\hfil indici uguali}
@@ -59,6 +60,7 @@ Un altra situazione è il caso in cui le basi non sono uguali. Per risolverla do
 			\dfrac{7^x}{3^x}=\dfrac{49}{9}\AddNode\\
 			x=2\AddNode
 		\end{align*}
+		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Semplifico l'espressione}%
 		\LinkNodes{Trasformo}%
 		\LinkNodes{Ottengo}%
@@ -71,8 +73,8 @@ Un altro tipo di equazione che è riconducibile alle precedenti si ha quando una
 \begin{esempiot}{Equazione esponenziale}{}
 	Risolvere l'equazione $3^{2x+1}+3^{2x}-3^{2x+2}=-45$
 \end{esempiot}
-	In questa situazione si ripete sempre la potenza $3^{2x}$  si procede come segue:
-	\begin{NodesList}[margin=4cm]
+	In questa situazione si ripete sempre la potenza $3^{2x}$  si procede come segue:\newpage
+	\begin{NodesList}%[margin=4cm]
 		\begin{align*}
 			3^{2x+1}+3^{2x}-3^{2x+2}=-45\AddNode\\
 			3^{2x}3+3^{2x}-3^{2x}3^2=-45\AddNode\\
@@ -82,8 +84,9 @@ Un altro tipo di equazione che è riconducibile alle precedenti si ha quando una
 			\intertext{\hfil Divido per $-5$}
 			3^{2x}=9\AddNode\\
 			2x=2\AddNode\\
-			x=1\AddNode
+			x=1\AddNode\\
 		\end{align*}
+		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Separo $3^{2x}$}%
 		\LinkNodes{Raccolgo}%
 		\LinkNodes{Sommo}%
@@ -98,7 +101,7 @@ Equazioni esponenziali risolvibili tramite sostituzioni. Questa volta si trasfor
 	Risolvere l'equazione $3^{2x}-8\cdot 3^x-9=0$
 \end{esempiot}
 	 è un'equazione del tipo $a^{2x}+a^{x}+c=0$ si risolve con la sostituzione $a^{x}=t$ Ovviamente $t>0$ 
-	\begin{NodesList} [margin=4cm]
+	\begin{NodesList} %[margin=4cm]
 		\begin{align*}
 			3^{2x}-8\cdot 3^x-9=0\AddNode\\
 			%\intertext{\hfil $2^x=t$}
@@ -112,11 +115,12 @@ Equazioni esponenziali risolvibili tramite sostituzioni. Questa volta si trasfor
 			t_{2}=-1\AddNode\\
 			3^x=-1\AddNode
 		\end{align*}
+			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Trasformo l'equazione}%
 		\LinkNodes{Risolvo}%
 		\LinkNodes{Ottengo due soluzioni}%
-		\LinkNodes{Risolvo l'equazione esponenziale}%
-		\LinkNodes{Uguaglio gli esponenti e risolvo}%
+		\LinkNodes{Risolvo l'equazione}%
+		\LinkNodes{Uguaglio e risolvo}%
 		\LinkNodes{}%
 		\LinkNodes{Equazione impossibile}%
 	\end{NodesList}
@@ -128,7 +132,7 @@ Un altro esempio è il seguente
 \end{esempiot}
 	è un'equazione del tipo $a^{x}+a^{-x}+c=0$ si risolve con la sostituzione $a^{x}=t$
 	Ovviamente $t>0$ 
-	\begin{NodesList} [margin=4cm]
+	\begin{NodesList}% [margin=4cm]
 		\begin{align*}
 			 2\cdot 2^{x}-4\cdot 2^{-x}-7=0\AddNode\\
 			 \intertext{\hfil $2^x=t$}
@@ -144,16 +148,17 @@ Un altro esempio è il seguente
 			t_{2}=-\dfrac{1}{4} \AddNode\\
 			3^x=-\dfrac{1}{4}\AddNode
 		\end{align*}
+			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Trasformo l'equazione}%
 		\LinkNodes{Trasformo}%
 		\LinkNodes{Ottengo}%
 		\LinkNodes{Risolvo}%
 		\LinkNodes{Ottengo due soluzioni}%
-		\LinkNodes{Risolvo l'equazione esponenziale}%
-		\LinkNodes{Uguaglio gli esponenti e risolvo}%
+		\LinkNodes{Risolvo l'equazione}%
+		\LinkNodes{Uguaglio gli esponenti}%
 		\LinkNodes{}%
 		\LinkNodes{Equazione impossibile}%
 	\end{NodesList}
 	\[x=2\]
 	\'{e} la soluzione accettabile.
-\altapriorita{risistemare il tutto non  funziona qualcosa in tikz}
+%\altapriorita{risistemare il tutto non  funziona qualcosa in tikz}
