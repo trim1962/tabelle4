@@ -10,9 +10,9 @@ Dall'equazione esponenziale\nobs\vref{def:EquazioneEsponenziale} è possibile pa
 \end{esempiot}
 \begin{NodesList}%[margin=4cm]
 \begin{align*}
-2^{3x+1}=2^{5x+2}\AddNode\\
-3x+1=5x+2\AddNode\\
-3x-5x=2-1\AddNode\\
+2^{3x+1}=&2^{5x+2}\AddNode\\
+3x+1=&5x+2\AddNode\\
+3x-5x=&2-1\AddNode\\
 x=-\dfrac{1}{2}\AddNode
 \end{align*}
 \tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
@@ -29,18 +29,18 @@ Un altro tipo di equazione esponenziale si ha quando una base è una potenza del
 \end{esempiot}\newpage In questo caso le basi sembrano diverse $9\neq 3$ ma $9$ \'{e} una potenza del $3$ si procede come segue:
 	\begin{NodesList}%[margin=4cm]
 		\begin{align*}
-			9^{x+1}=3^{3x+4}\AddNode\\
-			(3^2)^{x+1}=3^{3x+4}\AddNode\\
-			\intertext{\hfil Potenza di potenze}
-			3^{2x+2}=3^{3x+4}\AddNode\\
-			2x+2=3x+4\AddNode\\
-			2x-3x=-2+4\AddNode\\
-			x=-4\AddNode
+			9^{x+1}=&3^{3x+4}\AddNode\\
+			(3^2)^{x+1}=&3^{3x+4}\AddNode\\
+			\intertext{Potenza di potenze}
+			3^{2x+2}=&3^{3x+4}\AddNode\\
+			2x+2=&3x+4\AddNode\\
+			2x-3x=&-2+4\AddNode\\
+			x=&-2\AddNode
 		\end{align*}
 		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Trasformo le basi}%
 		\LinkNodes{}%
-		\LinkNodes{Uguaglio gli esponenenti}%
+		\LinkNodes{Uguaglio}%
 		\LinkNodes{Semplifico}%
 		\LinkNodes{Risolvo}%
 	\end{NodesList}
@@ -52,16 +52,16 @@ Un altra situazione è il caso in cui le basi non sono uguali. Per risolverla do
 \end{esempiot}
 	\begin{NodesList}% [margin=4cm]
 		\begin{align*}
-			7^{x+1}+2\cdot7^{x}=4\cdot3^{x+2}+13\cdot 3^x\AddNode\\
-			\intertext{\hfil indici uguali}
-			7\cdot7^x+2\cdot7^x=4\cdot9\cdot3^x+13\cdot3^x\AddNode\\
-			(7+2)7^x=36\cdot3^x+13\cdot3^x\AddNode\\
-			9\cdot7^x=49\cdot3^x\AddNode\\
-			\dfrac{7^x}{3^x}=\dfrac{49}{9}\AddNode\\
-			x=2\AddNode
+			7^{x+1}+2\cdot7^{x}=&4\cdot3^{x+2}+13\cdot 3^x\AddNode\\
+			\intertext{Indici uguali}
+			7\cdot7^x+2\cdot7^x=&4\cdot9\cdot3^x+13\cdot3^x\AddNode\\
+			(7+2)7^x=&36\cdot3^x+13\cdot3^x\AddNode\\
+			9\cdot7^x=&49\cdot3^x\AddNode\\
+			\dfrac{7^x}{3^x}=&\dfrac{49}{9}\AddNode\\
+			x=&2\AddNode
 		\end{align*}
 		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
-		\LinkNodes{Semplifico l'espressione}%
+		\LinkNodes{Semplifico}%
 		\LinkNodes{Trasformo}%
 		\LinkNodes{Ottengo}%
 		\LinkNodes{Risolvo}%
@@ -76,22 +76,22 @@ Un altro tipo di equazione che è riconducibile alle precedenti si ha quando una
 	In questa situazione si ripete sempre la potenza $3^{2x}$  si procede come segue:\newpage
 	\begin{NodesList}%[margin=4cm]
 		\begin{align*}
-			3^{2x+1}+3^{2x}-3^{2x+2}=-45\AddNode\\
-			3^{2x}3+3^{2x}-3^{2x}3^2=-45\AddNode\\
+			3^{2x+1}+3^{2x}-3^{2x+2}=&-45\AddNode\\
+			3^{2x}3+3^{2x}-3^{2x}3^2=&-45\AddNode\\
 			\intertext{\hfil Raccolgo $3^{2x}$}
-			3^{2x}(3+1-9)=-45\AddNode\\
-			-5\cdot 3^{2x}=-45\AddNode\\
+			3^{2x}(3+1-9)=&-45\AddNode\\
+			-5\cdot 3^{2x}=&-45\AddNode\\
 			\intertext{\hfil Divido per $-5$}
-			3^{2x}=9\AddNode\\
-			2x=2\AddNode\\
-			x=1\AddNode\\
+			3^{2x}=&9\AddNode\\
+			2x=&2\AddNode\\
+			x=&1\AddNode\\
 		\end{align*}
 		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Separo $3^{2x}$}%
 		\LinkNodes{Raccolgo}%
 		\LinkNodes{Sommo}%
 		\LinkNodes{Semplifico}%
-		\LinkNodes{Uguaglio gli esponenti}%
+		\LinkNodes{Uguaglio}%
 		\LinkNodes{Risolvo}%
 	\end{NodesList}
 	\[x=1\]
@@ -103,17 +103,17 @@ Equazioni esponenziali risolvibili tramite sostituzioni. Questa volta si trasfor
 	 è un'equazione del tipo $a^{2x}+a^{x}+c=0$ si risolve con la sostituzione $a^{x}=t$ Ovviamente $t>0$ 
 	\begin{NodesList} %[margin=4cm]
 		\begin{align*}
-			3^{2x}-8\cdot 3^x-9=0\AddNode\\
+			3^{2x}-8\cdot 3^x-9=&0\AddNode\\
 			%\intertext{\hfil $2^x=t$}
-			t^2-8t-9=0\AddNode\\
-			t_{1,2}=\dfrac{8\pm\sqrt{64+36}}{2}\AddNode\\
+			t^2-8t-9=&0\AddNode\\
+			t_{1,2}=&\dfrac{8\pm\sqrt{64+36}}{2}\AddNode\\
 			\intertext{\hfil Inverto la trasformazione}
-			t_{1}=9\AddNode\\
-			3^{x}=9\AddNode\\
-			x=2\AddNode\\
+			t_{1}=&9\AddNode\\
+			3^{x}=&9\AddNode\\
+			x=&2\AddNode\\
 			\intertext{\hfil Uso la seconda soluzione}
-			t_{2}=-1\AddNode\\
-			3^x=-1\AddNode
+			t_{2}=&-1\AddNode\\
+			3^x=&-1\AddNode
 		\end{align*}
 			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Trasformo l'equazione}%
@@ -136,17 +136,17 @@ Un altro esempio è il seguente
 		\begin{align*}
 			 2\cdot 2^{x}-4\cdot 2^{-x}-7=0\AddNode\\
 			 \intertext{\hfil $2^x=t$}
-			2t-4t^{-1}-7=0\AddNode\\
-			2t-4\dfrac{1}{t}-7=0\AddNode\\
-			2t^2-7x-4=0\AddNode\\
-			t_{1,2}=\dfrac{7\pm\sqrt{49+32}}{4}\AddNode\\
+			2t-4t^{-1}-7=&0\AddNode\\
+			2t-4\dfrac{1}{t}-7=&0\AddNode\\
+			2t^2-7x-4=&0\AddNode\\
+			t_{1,2}=&\dfrac{7\pm\sqrt{49+32}}{4}\AddNode\\
 			\intertext{\hfil Inverto la trasformazione}
-			t_{1}=4\AddNode\\
-			2^{x}=4\AddNode\\
-			x=2\AddNode\\
+			t_{1}=&4\AddNode\\
+			2^{x}=&4\AddNode\\
+			x=&2\AddNode\\
 			\intertext{\hfil Uso la seconda soluzione}
-			t_{2}=-\dfrac{1}{4} \AddNode\\
-			3^x=-\dfrac{1}{4}\AddNode
+			t_{2}=&-\dfrac{1}{4} \AddNode\\
+			3^x=&-\dfrac{1}{4}\AddNode
 		\end{align*}
 			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Trasformo l'equazione}%
@@ -157,7 +157,7 @@ Un altro esempio è il seguente
 		\LinkNodes{Risolvo l'equazione}%
 		\LinkNodes{Uguaglio gli esponenti}%
 		\LinkNodes{}%
-		\LinkNodes{Equazione impossibile}%
+		\LinkNodes{Impossibile}%
 	\end{NodesList}
 	\[x=2\]
 	\'{e} la soluzione accettabile.

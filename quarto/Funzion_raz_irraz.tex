@@ -4,10 +4,10 @@
 \chapter{Funzioni razionali e irrazionali}
 \section{Definizioni}
 \begin{definizionet}{Campo di esistenza}{}
-Data una funzione $\funzione{f}{\R}{\R}$ il campo di esistenza $\PA{C.E.}$ è l'insieme dei valori che è possibile assegnare alla funzione.\index{Funzione!campo!esistenza}
+Data una funzione $\funzione{f}{\R}{\R}$ il campo di esistenza \PA{C.E.} è l'insieme dei valori che è possibile assegnare alla funzione.\index{Funzione!campo!esistenza}
 \end{definizionet}
 \begin{definizionet}{Positività di una funzione}{}
-	Data una funzione $\funzione{f}{\R}{\R}$, la positività\index{Funzione!positività} di una funzione è l'insieme dei valore del $\PA{C.E.}$ per cui\[f(x)\geq 0 \]
+	Data una funzione $\funzione{f}{\R}{\R}$, la positività\index{Funzione!positività} di una funzione è l'insieme dei valore del \PA{C.E.} per cui\[f(x)\geq 0 \]
 \end{definizionet}
 \section{Razionale intera}
 \subsection{Definizione}
@@ -22,15 +22,17 @@ Una funzione $\funzione{f}{\R}{\R}$,  è  razionale intera se per l'incognita,  
 	\end{align*}
 \end{esempiot}
 \subsection{Campo di esistenza}
-Una funzione razionale intera per come è formata, per ogni valore assegnato l'incognita è sempre  definita. Quindi per ogni numero appartenente ai reali la funzione esiste. Per questo possiamo scrivere:
+Una funzione razionale intera per come è formata, ad  ogni valore assegnato all'incognita questa è sempre  definita. Quindi la funzione esiste per ogni numero appartenente ai reali. Per questo possiamo scrivere:
 \begin{definizionet}{Campo di esistenza razionale intera}{}
-Il Campo di esistenza $\PA{C.E.}$ di una funzione razionale intera $\funzione{f}{\R}{\R}$, è tutto l'insieme dei numeri reali.
+Il campo di esistenza \PA{C.E.} di una funzione razionale intera $\funzione{f}{\R}{\R}$, è tutto l'insieme dei numeri reali.
 \[\PA{C.E.}=\lbrace\forall\ x\in\R\rbrace\]
 \end{definizionet} 
+
 \section{Razionale fratta}
 \subsection{Definizione}
 \begin{definizionet}{Razionale fratta}{}
 	Una funzione $\funzione{f}{\R}{\R}$ è razionale fratta se l'incognita compare al denominatore di una frazione.\index{Funzione!razionale!fratta}
+	\[f(x)=\dfrac{N(x)}{D(x)}\]
 \end{definizionet}
 \begin{esempiot}{Razionale fratta}{}
 	\begin{align*}
@@ -38,16 +40,77 @@ Il Campo di esistenza $\PA{C.E.}$ di una funzione razionale intera $\funzione{f}
 	f(x)=&\dfrac{x^2+5x+8}{x^3+x^4}&f(x)=&\dfrac{\sqrt{2}x+2x^3}{x^2+x+1}
 	\end{align*}
 \end{esempiot}
+\subsection{Campo di esistenza}
+In una razionale fratta, l'incognita è al denominatore. In una frazione il denominatore non può essere uguale a zero. Detto questo l'incognita non può assumere valori che annullano il denominatore.
+\begin{definizionet}{Campo di esistenza razionale fratta}{}
+	Il campo di esistenza \PA{C.E.} di una funzione razionale fratta $\funzione{f}{\R}{\R}$, è  l'insieme dei numeri reali per cui il denominatore è diverso da zero.
+	\[\text{\PA{C.E.}}=\R-\lbrace\forall\ x\in\R\ \text{tali che} D(x)= 0\rbrace\]
+\end{definizionet}
+\begin{esempiot}{Campo di esistenza razionale fratta}{}
+	Trovare il campo di esistenza della funzione\[f(x)=\dfrac{x-4}{x^2+5x+4}\]
+	Procediamo nel  seguente modo
+	\begin{enumerate}
+		\item Poniamo il denominatore uguale a zero e risolviamo l'equazione\begin{align*}
+		x^2+5x+4=&0\\
+		x_{1,2}=&\dfrac{-5\pm\sqrt{25-4(1)(4)}}{2}\\
+		=&\dfrac{-5\pm\sqrt{9}}{2}\\
+		=&\dfrac{-5\pm 3}{2}\\
+		=&\begin{cases}
+		x_1=\dfrac{-5-3}{2}=-4\\
+		x_2=\dfrac{-5+3}{2}=-1
+		\end{cases}
+		\end{align*}
+		\item Escludiamo i valori trovati\[\text{\PA{C.E.}}=\R-\lbrace -1,-4\rbrace\]
+	\end{enumerate}
+\end{esempiot}
+\begin{esempiot}{Campo di esistenza razionale fratta}{}
+	Trovare il campo di esistenza della funzione\[f(x)=\dfrac{x^2+1}{x^2+2x+4}\]
+	Procediamo nel  seguente modo:
+	\begin{enumerate}
+		\item Poniamo il denominatore uguale a zero e risolviamo l'equazione\begin{align*}
+		x^2+2x+4=&0\\
+		x_{1,2}=&\dfrac{-2\pm\sqrt{4-4(1)(4)}}{2}\\
+		=&\dfrac{-2\pm\sqrt{-12}}{2}\\
+	\intertext{L'equazione non ha soluzioni}
+		\end{align*}
+		\item Non abbiamo valori da escludere\[\text{\PA{C.E.}}=\R\]
+	\end{enumerate}
+\end{esempiot}
 \section{Irrazionale pari intera}
 \subsection{Definizione}
 \begin{definizionet}{Irrazionale pari intera}{}
-	Una funzione $\funzione{f}{\R}{\R}$ è irrazionale pari intera se l'incognita appartiene al radicando di una radice di indice pari e  non si trova nel denominatore di una frazione. \index{Funzione!irrazionale!pari intera}
+	Una funzione $\funzione{f}{\R}{\R}$ è irrazionale pari intera se l'incognita appartiene al radicando di una radice di indice pari e  non si trova nel denominatore di una frazione.\index{Funzione!irrazionale!pari intera}
 \end{definizionet}
 \begin{esempiot}{Irrazionale pari intera}{}
 \begin{align*}
 f(x)=&\sqrt{x}+1&f(x)=&\sqrt{x^2+3x+1}\\
 f(x)=&\sqrt[6]{x^3+3x}+x&f(x)=&\sqrt{x^2+3x+1}\\
 \end{align*}
+\end{esempiot}
+\subsection{Campo di esistenza}
+Una radice di indice pari è definita quando il radicando è positivo.  
+\begin{definizionet}{Campo di esistenza irrazionale intera}{}
+	Il campo di esistenza \PA{C.E.} di una funzione irrazionale intera $\funzione{f}{\R}{\R}$, è  l'insieme dei numeri reali per cui il radicando è maggiore o uguale a  zero.
+\end{definizionet} 
+\begin{esempiot}{Campo di esistenza irrazionale intera}{}
+Determinare il campo di esistenza della funzione\[f(x)=\sqrt{x^2+3x}\]Poniamo il radicando maggiore o uguale a zero e procediamo nel seguente modo:
+\begin{align*}
+x^2+3x\geq& 0\\
+\intertext{Risolviamo l'equazione}
+x^2+3x=& 0\\
+x_{1,2}=&\dfrac{-3\pm\sqrt{9-0}}{2}\\
+=&\begin{cases}
+x_1=\dfrac{-3-3}{2}=-3\\
+\\
+x_2=\dfrac{-3+3}{2}=0\\
+\end{cases}
+\end{align*}
+Otteniamo il grafico
+\begin{center}
+\includestandalone[width=8.5cm]{quarto/DisSecGrado/FunzIrraEsempio1}
+\end{center}
+Quindi il \PA{C.E.}	è
+\[x\leq -3\quad 0\leq x\]
 \end{esempiot}
 \section{Irrazionale pari fratta}
 \subsection{Definizione}
@@ -60,10 +123,101 @@ f(x)=&\sqrt[6]{x^3+3x}+x&f(x)=&\sqrt{x^2+3x+1}\\
 	f(x)=&\frac{\sqrt{x^2+1}}{x}&f(x)=&\frac{x}{\sqrt[6]{x^2-3}}\\
 	\end{align*}
 \end{esempiot}
+\subsection{Campo di esistenza}
+Una funzione irrazionale pari e fratta deve unire entrambi le caratteristiche. Avremo:
+\begin{definizionet}{Campo di esistenza irrazionale fratta}{}
+	Il campo di esistenza \PA{C.E.} di una funzione irrazionale fratta $\funzione{f}{\R}{\R}$, è  l'insieme dei numeri reali per cui
+	\begin{enumerate}
+		\item Il radicando deve essere maggiore o uguale a zero.
+		\item Il denominatore è diverso da zero.
+	\end{enumerate}
+\end{definizionet} 
+\begin{esempiot}{Campo di esistenza irrazionale pari fratta}{}
+	Determinare il campo di esistenza della funzione\[f(x)=\sqrt{\dfrac{x^2-1}{x^2-4}}\] Procediamo nel seguente modo:
+	\begin{align*}
+	f(x)=&\sqrt{\dfrac{x^2-1}{x^2-4}}\\
+	\intertext{Radicando maggiore o uguale a zero}
+	\dfrac{x^2-1}{x^2-4}\geq&0\\	
+	x^2-1\geq&0\\
+	x^2-1=&0\\
+	x_{1,2}=&\dfrac{0\pm\sqrt{0-4(-1)(1)}}{2}\\
+=&\dfrac{\pm\sqrt{4}}{2}=\begin{cases}
+x_1=+\dfrac{2}{2}=+1\\
+\\
+x_2=-\dfrac{2}{2}=-1\\
+\end{cases}	
+	\intertext{Denominatore diverso da zero}
+x^2-4>&0\\
+x^2-4=&0\\
+x_{1,2}=&\dfrac{0\pm\sqrt{0-4(-4)(1)}}{2}\\
+=&\dfrac{\pm\sqrt{16}}{2}=\begin{cases}
+x_1=+\dfrac{4}{2}=+2\\
+\\
+x_2=-\dfrac{4}{2}=-2\\
+\end{cases}	
+	\end{align*}
+	Otteniamo il grafico
+	\begin{center}
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/FunzIrraEsempio2}
+	\end{center}
+Quindi il \PA{C.E.}	è
+\[ x< -2\quad -1\leq x\leq 1\quad 2<x  \]
+\end{esempiot}
+\begin{esempiot}{Campo di esistenza irrazionale pari fratta}{}
+		Determinare il campo di esistenza della funzione\[f(x)=\dfrac{x^2-1}{\sqrt{x^2-4}}\]Procediamo nel seguente modo:
+		\begin{align*}
+		f(x)=&\dfrac{x^2-1}{\sqrt{x^2-4}}
+		\intertext{Radicando maggiore o uguale a zero}
+		\intertext{Denominatore diverso da zero}
+	x^2-4>&0\\
+	x^2-4=&0\\
+	x_{1,2}=&\dfrac{0\pm\sqrt{0-4(-4)(1)}}{2}\\
+	=&\dfrac{\pm\sqrt{16}}{2}=\begin{cases}
+	x_1=+\dfrac{4}{2}=+2\\
+	\\
+	x_2=-\dfrac{4}{2}=-2\\
+	\end{cases}	
+		\end{align*}
+			Otteniamo il grafico
+		\begin{center}
+			\includestandalone[width=8.5cm]{quarto/DisSecGrado/FunzIrraEsempio3}
+		\end{center}
+		Quindi il \PA{C.E.}	è
+		\[ x< -2\quad 2<x  \]
+\end{esempiot}
+\begin{esempiot}{Campo di esistenza irrazionale pari fratta}{}
+	Determinare il campo di esistenza della funzione\[f(x)=\dfrac{\sqrt{x^2-1}}{x^2-4}\]Procediamo nel seguente modo:
+	\begin{align*}
+	f(x)=&\dfrac{\sqrt{x^2-1}}{x^2-4}\\
+	\intertext{Radicando maggiore o uguale a zero}	
+	x^2-1\geq&0\\
+	x^2-1=&0\\
+	x_{1,2}=&\dfrac{0\pm\sqrt{0-4(-1)(1)}}{2}\\
+	=&\dfrac{\pm\sqrt{4}}{2}=\begin{cases}
+	x_1=+\dfrac{2}{2}=+1\\
+	\\
+	x_2=-\dfrac{2}{2}=-1\\
+	\end{cases}	
+	\intertext{Denominatore diverso da zero}
+	x^2-4=&0\\
+	x_{1,2}=&\dfrac{0\pm\sqrt{0-4(-4)(1)}}{2}\\
+	=&\dfrac{\pm\sqrt{16}}{2}=\begin{cases}
+	x_1=+\dfrac{4}{2}=+2\\
+	\\
+	x_2=-\dfrac{4}{2}=-2\\
+	\end{cases}	
+	\end{align*}
+Unendo la disequazione con l'equazione otteniamo il grafico
+\begin{center}
+	\includestandalone[width=8.5cm]{quarto/DisSecGrado/FunzIrraEsempio4}
+\end{center}
+	Quindi il \PA{C.E.}	è
+\[ x< -2\quad -2<x\leq -1\quad 1\leq x<2\quad 2<x \]
+\end{esempiot}
 \section{Irrazionale dispari intera}
 \subsection{Definizione}
 \begin{definizionet}{Irrazionale dispari intera}{}
-	Una funzione $\funzione{f}{\R}{\R}$ è irrazionale dispari intera se l'incognita appartiene al radicando di una radice di indice dispari e  non si trova nel denominatore di una frazione. \index{Funzione!irrazionale!dispari intera}
+	Una funzione $\funzione{f}{\R}{\R}$ è irrazionale diszzpari intera se l'incognita appartiene al radicando di una radice di indice dispari e  non si trova nel denominatore di una frazione. \index{Funzione!irrazionale!dispari intera}
 \end{definizionet}
 \begin{esempiot}{Irrazionale dispari intera}{}
 	\begin{align*}
