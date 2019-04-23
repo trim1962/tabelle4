@@ -1,15 +1,84 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
 % !TeX root = tabellequarto.tex
-
-
 \chapter{Funzioni razionali e irrazionali}
+\section{Definizioni}
 \begin{definizionet}{Campo di esistenza}{}
-Data una funzione $\funzione{f}{\R}{\R}$ il campo di esistenza $\PA{C.E.}$ è l'insieme dei valori che è possibile assegnare alla funzione.
+Data una funzione $\funzione{f}{\R}{\R}$ il campo di esistenza $\PA{C.E.}$ è l'insieme dei valori che è possibile assegnare alla funzione.\index{Funzione!campo!esistenza}
+\end{definizionet}
+\begin{definizionet}{Positività di una funzione}{}
+	Data una funzione $\funzione{f}{\R}{\R}$, la positività\index{Funzione!positività} di una funzione è l'insieme dei valore del $\PA{C.E.}$ per cui\[f(x)\geq 0 \]
 \end{definizionet}
 \section{Razionale intera}
+\subsection{Definizione}
+\begin{definizionet}{Razionale intera}{}
+Una funzione $\funzione{f}{\R}{\R}$,  è  razionale intera se per l'incognita,  compaiono solo le operazioni di somma, prodotto e potenza.\index{Funzione!razionale!intera}
+\end{definizionet}
+\begin{esempiot}{Razionale intera}{}
+	\begin{align*}
+	f(x)=&2x^2+3x+4&f(x)=&2\sqrt{2}x^3+x+1\\
+		f(x)=&8x^3+4x+2&f(x)=&x^2+2x+\sqrt{6}\\
+		f(x)=&\frac{1}{2}x^5+2x+\frac{2}{3}&f(x)=&2x^0\\
+	\end{align*}
+\end{esempiot}
+\subsection{Campo di esistenza}
+Una funzione razionale intera per come è formata, per ogni valore assegnato l'incognita è sempre  definita. Quindi per ogni numero appartenente ai reali la funzione esiste. Per questo possiamo scrivere:
+\begin{definizionet}{Campo di esistenza razionale intera}{}
+Il Campo di esistenza $\PA{C.E.}$ di una funzione razionale intera $\funzione{f}{\R}{\R}$, è tutto l'insieme dei numeri reali.
+\[\PA{C.E.}=\lbrace\forall\ x\in\R\rbrace\]
+\end{definizionet} 
 \section{Razionale fratta}
+\subsection{Definizione}
+\begin{definizionet}{Razionale fratta}{}
+	Una funzione $\funzione{f}{\R}{\R}$ è razionale fratta se l'incognita compare al denominatore di una frazione.\index{Funzione!razionale!fratta}
+\end{definizionet}
+\begin{esempiot}{Razionale fratta}{}
+	\begin{align*}
+	f(x)=&\dfrac{1}{x+1}&f(x)=&\dfrac{\sqrt{2}}{x^2-3x}\\
+	f(x)=&\dfrac{x^2+5x+8}{x^3+x^4}&f(x)=&\dfrac{\sqrt{2}x+2x^3}{x^2+x+1}
+	\end{align*}
+\end{esempiot}
 \section{Irrazionale pari intera}
+\subsection{Definizione}
+\begin{definizionet}{Irrazionale pari intera}{}
+	Una funzione $\funzione{f}{\R}{\R}$ è irrazionale pari intera se l'incognita appartiene al radicando di una radice di indice pari e  non si trova nel denominatore di una frazione. \index{Funzione!irrazionale!pari intera}
+\end{definizionet}
+\begin{esempiot}{Irrazionale pari intera}{}
+\begin{align*}
+f(x)=&\sqrt{x}+1&f(x)=&\sqrt{x^2+3x+1}\\
+f(x)=&\sqrt[6]{x^3+3x}+x&f(x)=&\sqrt{x^2+3x+1}\\
+\end{align*}
+\end{esempiot}
 \section{Irrazionale pari fratta}
+\subsection{Definizione}
+\begin{definizionet}{Irrazionale pari fratta}{}
+	Una funzione $\funzione{f}{\R}{\R}$ è irrazionale pari intera se l'incognita appartiene al radicando di una radice di indice pari e   si trova nel denominatore di una frazione. \index{Funzione!irrazionale!pari fratta}
+\end{definizionet}
+\begin{esempiot}{Irrazionale pari fratta}{}
+	\begin{align*}
+	f(x)=&\frac{1}{\sqrt{x}}+1&f(x)=&\sqrt[4]{\frac{x-2}{x^2+2}}\\
+	f(x)=&\frac{\sqrt{x^2+1}}{x}&f(x)=&\frac{x}{\sqrt[6]{x^2-3}}\\
+	\end{align*}
+\end{esempiot}
 \section{Irrazionale dispari intera}
+\subsection{Definizione}
+\begin{definizionet}{Irrazionale dispari intera}{}
+	Una funzione $\funzione{f}{\R}{\R}$ è irrazionale dispari intera se l'incognita appartiene al radicando di una radice di indice dispari e  non si trova nel denominatore di una frazione. \index{Funzione!irrazionale!dispari intera}
+\end{definizionet}
+\begin{esempiot}{Irrazionale dispari intera}{}
+	\begin{align*}
+	f(x)=&\sqrt[3]{x}+1&f(x)=&\sqrt[5]{x^2+3x+1}\\
+	f(x)=&\sqrt[7]{x^3+3x}+x&f(x)=&\sqrt[13]{x^2+3x+1}\\
+	\end{align*}
+\end{esempiot}
 \section{Irrazionale dispari fratta}
+\subsection{Definizione}
+\begin{definizionet}{Irrazionale dispari fratta}{}
+	Una funzione $\funzione{f}{\R}{\R}$ è irrazionale dispari intera se l'incognita appartiene al radicando di una radice di indice dispari e   si trova nel denominatore di una frazione. \index{Funzione!irrazionale!dispari fratta}
+\end{definizionet}
+\begin{esempiot}{Irrazionale dispari fratta}{}
+	\begin{align*}
+	f(x)=&\frac{1}{\sqrt[3]{x}}+1&f(x)=&\sqrt[3]{\frac{x-2}{x^2+2}}\\
+	f(x)=&\frac{\sqrt[5]{x^2+1}}{x}&f(x)=&\frac{x}{\sqrt[3]{x^2-3}}\\
+	\end{align*}
+\end{esempiot}
