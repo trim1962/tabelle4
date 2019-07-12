@@ -5,15 +5,14 @@
 
 \documentclass[a4paper,oneside]{book}%
 % see http://www.tex.ac.uk/cgi-bin/texfaq2html?label=noroom
-\input{../Mod_base/base}
-%\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+
+\usepackage{base}
 \usepackage[big]{layaureo}
-\input{../Mod_base/grafica}
-%\input{../Mod_base/rifIndici}
-\input{../Mod_base/stand_class}
-\usepackage{qrcode}
-\input{../Mod_base/matematica}
-\input{../Mod_base/tabelle}
+\usepackage{grafica}
+
+\usepackage{stand_class}
+\usepackage{matematica}
+\usepackage{tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
 \DeclareCaptionFormat{esempio}{\textbf{Esempio \thefigure}#2#3}
 \newcolumntype{L}{>{$\displaystyle}l<{$}}
@@ -29,21 +28,22 @@
 \newlength{\gnam}
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
-\input{../Mod_base/pagina}
-\input{../Mod_base/date}
-\input{../Mod_base/loghi}
-\input{../Mod_base/unita_misura}
+\usepackage{date}
+\usepackage{pagina}
+\usepackage{unita_misura}
+
 \usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
 \usepackage[toc,page]{appendix}
-
 \renewcommand{\appendixtocname}{Appendice}
-
 \renewcommand{\appendixpagename}{Appendice}
+\usepackage{indice}
+\usepackage{utili}
+\usepackage{copyright}
 \usepackage[italian]{varioref}
 \usepackage{hyperxmp}
 \usepackage[pdfpagelabels]{hyperref}
 \usepackage[italian]{cleveref}
-\input{../Mod_base/tcolorboxgest}
+\usepackage{tcolorboxgest}
 \title{Appunti matematica}
 \author{Claudio Duchi}
 \date{\datetime}
@@ -98,26 +98,15 @@
 	%\pagenumbering{arabic}
 }
 \makeatother
-\input{../Mod_base/indice}
 
-\input{../Mod_base/utili}
-\usepackage{tkz-berge}
-\newcommand{\polylogo}[1]{
-	\begin{center}
-		\begin{tikzpicture}
-		\renewcommand*{\VertexBallColor}{green!50!black}
-		\GraphInit[vstyle=Art]
-		\grComplete[RA=5]{#1}
-		\end{tikzpicture}
-	\end{center}
-}
+
 \listfiles
 \input{compilaUNO}
  \begin{document}
 \frontmatter
 \begin{titlepage}
 	\begin{center}
-		\input{../Mod_base/Lgrande}\\[1cm]
+		\Lgrandedue\\[1cm]
 		\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 		\HRule \\[0.4cm]
 		{ \huge \bfseries APPUNTI DI MATEMATICA}\\[0.4cm]
