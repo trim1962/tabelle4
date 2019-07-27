@@ -32,3 +32,5 @@
 *.sym
 *.glg
 *.tdo
+*.blg
+*.bbl
